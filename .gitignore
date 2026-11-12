@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+.vercel
+node_modules/
+site.html
+index-standalone.html
+courses.deploy.json

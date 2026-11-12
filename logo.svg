@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Backprop">
+  <defs>
+    <linearGradient id="bpg" x1="48" y1="8" x2="4" y2="42" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5BE7A9"/>
+      <stop offset="1" stop-color="#2F7DF6"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="11" fill="#0E1726"/>
+  <!-- three layers of nodes: output, hidden, input (read right to left) -->
+  <g fill="none" stroke="#2A3850" stroke-width="1.4">
+    <path d="M34 15 L22 15 M34 15 L22 24 M34 15 L22 33"/>
+    <path d="M34 33 L22 15 M34 33 L22 24 M34 33 L22 33"/>
+    <path d="M22 15 L11 20 M22 24 L11 20 M22 24 L11 29 M22 33 L11 29"/>
+  </g>
+  <!-- the backward pass: gradient flowing right to left -->
+  <path d="M34 24 L13 24" stroke="url(#bpg)" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M18.5 18.5 L12.4 24 L18.5 29.5" fill="none" stroke="url(#bpg)"
+        stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#8EA0BC">
+    <circle cx="34" cy="15" r="2.5"/><circle cx="34" cy="33" r="2.5"/>
+    <circle cx="22" cy="15" r="2.2"/><circle cx="22" cy="33" r="2.2"/>
+  </g>
+  <circle cx="22" cy="24" r="2.6" fill="#5BE7A9"/>
+  <circle cx="11" cy="20" r="2.2" fill="#2F7DF6"/>
+  <circle cx="11" cy="29" r="2.2" fill="#2F7DF6"/>
+</svg>

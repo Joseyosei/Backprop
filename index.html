@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Backprop — verified AI, ML and data science courses</title>
+<meta name="description" content="A hand-checked map of AI, machine learning and data science courses from 19 providers. Every exam code, price and retirement date verified by hand. 100 of 133 courses are free.">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0e1726; --body:#243246; --mute:#64748b; --line:#e2e8f0; --soft:#f6f8fb;
+    --card:#fff; --mint:#5be7a9; --blue:#2f7df6; --deep:#0e1726;
+    --warnbg:#fff8e8; --warnln:#e8c979; --warnink:#6b4e05;
+    --okbg:#e8f8f0; --okink:#0b6b43; --feeink:#8a4b00; --feebg:#fdf0e0;
+    --r:12px; --shadow:0 1px 2px rgba(14,23,38,.05),0 8px 24px -12px rgba(14,23,38,.12);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#fff;color:var(--body);font:15px/1.6 Inter,system-ui,-apple-system,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  code,.mono{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+  h1,h2,h3{color:var(--ink);margin:0;letter-spacing:-.02em}
+
+  /* ---------- nav ---------- */
+  nav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:14px;height:62px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;color:var(--ink);
+    letter-spacing:-.03em}
+  .brand img{width:30px;height:30px;border-radius:7px;display:block}
+  .brand span i{font-style:normal;color:var(--mute);font-weight:500}
+  nav .sp{flex:1}
+  .nlink{font-size:13.5px;color:var(--mute);font-weight:500;white-space:nowrap}
+  .nlink:hover{color:var(--ink);text-decoration:none}
+  @media(max-width:720px){ .nlink.hide{display:none} }
+
+  /* ---------- hero ---------- */
+  header{background:
+      radial-gradient(900px 420px at 88% -8%,rgba(91,231,169,.16),transparent 62%),
+      radial-gradient(760px 380px at 4% 0%,rgba(47,125,246,.14),transparent 58%),
+      var(--deep);
+    color:#fff;padding:62px 0 54px}
+  .kicker{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;
+    letter-spacing:.06em;text-transform:uppercase;color:#9fe8c6;background:rgba(91,231,169,.12);
+    border:1px solid rgba(91,231,169,.3);padding:5px 11px;border-radius:99px}
+  header h1{color:#fff;font-size:clamp(30px,5vw,47px);line-height:1.08;margin:18px 0 0;max-width:19ch;
+    font-weight:800}
+  header h1 em{font-style:normal;background:linear-gradient(100deg,var(--mint),var(--blue));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  header p.lede{color:#b7c4d8;font-size:17px;max-width:62ch;margin:18px 0 0}
+  .stats{display:flex;flex-wrap:wrap;gap:30px;margin-top:30px}
+  .stats div b{display:block;font-size:27px;font-weight:800;color:#fff;line-height:1.1;
+    font-variant-numeric:tabular-nums}
+  .stats div span{font-size:12.5px;color:#93a3bb}
+
+  /* ---------- sections ---------- */
+  section{padding:46px 0}
+  .shead{margin-bottom:20px}
+  .shead h2{font-size:24px}
+  .shead p{color:var(--mute);margin:7px 0 0;max-width:72ch;font-size:14.5px}
+
+  /* ---------- tracks ---------- */
+  .tracks{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));gap:12px}
+  .tcard{border:1px solid var(--line);border-radius:var(--r);padding:15px 16px;background:var(--card);
+    cursor:pointer;text-align:left;font:inherit;color:inherit;transition:.16s}
+  .tcard:hover{border-color:#b9c6da;transform:translateY(-1px);box-shadow:var(--shadow)}
+  .tcard.on{border-color:var(--ink);box-shadow:0 0 0 1.5px var(--ink)}
+  .tcard b{display:block;color:var(--ink);font-size:15px;margin-bottom:5px}
+  .tcard p{margin:0;font-size:12.8px;color:var(--mute);line-height:1.5}
+  .tcard .n{margin-top:9px;font-size:11.5px;font-weight:700;color:var(--blue)}
+
+  /* ---------- retired table ---------- */
+  .alert{background:var(--warnbg);border:1px solid var(--warnln);border-radius:var(--r);
+    padding:16px 18px}
+  .alert h3{font-size:15.5px;color:var(--warnink);margin-bottom:5px}
+  .alert p{margin:0 0 12px;font-size:13.6px;color:#6b5a28}
+  .alert table{width:100%;border-collapse:collapse;font-size:13px}
+  .alert th{text-align:left;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+    color:#8a7538;padding:5px 9px 5px 0;font-weight:700}
+  .alert td{padding:6px 9px 6px 0;border-top:1px solid rgba(180,150,70,.26);color:#4f431f}
+  .alert td.c{font-weight:700;color:var(--warnink);white-space:nowrap}
+
+  /* ---------- filter bar ---------- */
+  .fbar{position:sticky;top:62px;z-index:30;background:rgba(255,255,255,.95);
+    backdrop-filter:blur(8px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .fbar .row{display:flex;align-items:center;gap:8px;height:54px;overflow-x:auto;scrollbar-width:none}
+  .fbar .row::-webkit-scrollbar{display:none}
+  button.btn{font:inherit;font-size:13px;font-weight:500;cursor:pointer;white-space:nowrap;
+    border:1px solid var(--line);background:#fff;color:var(--body);border-radius:8px;padding:7px 12px;
+    transition:.14s;flex:0 0 auto}
+  button.btn:hover{border-color:#b9c6da;background:#fafcff}
+  button.btn.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+  button.pill{background:var(--ink);color:#fff;border-color:var(--ink);font-weight:600}
+  button.pill::after{content:" \25BE"}
+  button.pill[aria-expanded="true"]::after{content:" \25B4"}
+  .panel{border-top:1px solid var(--line);background:var(--soft);max-height:min(46vh,400px);
+    overflow-y:auto;padding:4px 0 12px}
+  .frow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:9px 0;
+    border-bottom:1px dashed var(--line)}
+  .frow:last-child{border-bottom:none}
+  .frow>.lbl{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);
+    font-weight:700;width:66px;flex:0 0 66px}
+  @media(max-width:720px){ .frow>.lbl{width:100%;flex:0 0 100%;margin-bottom:-3px} }
+  .chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;background:var(--soft);
+    border:1px solid var(--line);border-radius:99px;padding:3px 7px 3px 11px;white-space:nowrap}
+  .chip i{font-style:normal;cursor:pointer;color:var(--mute);font-size:14px;padding:0 2px}
+  .chip i:hover{color:var(--ink)}
+  .search{flex:0 0 190px;border:1px solid var(--line);border-radius:8px;padding:7px 11px;
+    font:inherit;font-size:13px;min-width:140px}
+  .search:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(47,125,246,.12)}
+
+  /* ---------- course list ---------- */
+  .glist{display:flex;flex-direction:column;gap:10px}
+  .gh{display:flex;align-items:baseline;gap:10px;margin:26px 0 12px;padding-bottom:8px;
+    border-bottom:1px solid var(--line)}
+  .gh h3{font-size:16.5px}
+  .gh span{font-size:12.5px;color:var(--mute)}
+  .c{display:flex;gap:13px;border:1px solid var(--line);border-radius:var(--r);padding:14px 15px;
+    background:var(--card);transition:.14s}
+  .c:hover{border-color:#c6d2e2;box-shadow:var(--shadow)}
+  .c.done{background:#fbfefc;border-color:#d6ecdf}
+  .c.done .cn a{text-decoration:line-through;color:var(--mute)}
+  .cb{width:19px;height:19px;flex:0 0 19px;margin-top:2px;accent-color:#0b6b43;cursor:pointer}
+  .cbody{min-width:0;flex:1}
+  .cn{font-weight:600;font-size:14.6px;line-height:1.4;color:var(--ink)}
+  .cn a{color:var(--ink)}
+  .cwhy{color:var(--mute);font-size:13px;margin:5px 0 0;max-width:80ch}
+  .meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:9px}
+  .t{display:inline-block;font-size:10.8px;font-weight:700;padding:2.5px 7px;border-radius:5px;
+    letter-spacing:.01em;white-space:nowrap}
+  .t-core{background:#fde9e9;color:#9b1c1c}
+  .t-cert{background:var(--okbg);color:var(--okink)}
+  .t-free{background:var(--okbg);color:var(--okink)}
+  .t-best{background:#d6f5e4;color:#07603a}
+  .t-fee{background:var(--feebg);color:var(--feeink)}
+  .t-sub{background:#eef1f6;color:#4a5568}
+  .t-plat{background:#eaf1fd;color:#1b4fa8}
+  .t-top{background:#f1ecfb;color:#4a2f9b}
+  .t-lvl{background:#f3f5f8;color:#5a6676}
+  .hrs{font-size:12.3px;color:var(--mute);white-space:nowrap}
+  .url{display:flex;align-items:center;gap:7px;margin-top:8px;flex-wrap:wrap}
+  .url code{font-size:11.2px;color:#55617a;background:var(--soft);border:1px solid var(--line);
+    border-radius:5px;padding:2px 6px;word-break:break-all;user-select:all}
+  button.mini{font-size:11px;padding:2.5px 8px;border-radius:5px;color:var(--mute);background:#fff;
+    border:1px solid var(--line);cursor:pointer;font:inherit;font-size:11px}
+  button.mini:hover{color:var(--ink);border-color:#b9c6da}
+  .empty{text-align:center;padding:56px 20px;color:var(--mute)}
+
+  /* ---------- progress rail ---------- */
+  .rail{position:fixed;left:0;right:0;bottom:0;z-index:35;background:var(--deep);color:#fff;
+    padding:9px 0;box-shadow:0 -6px 20px rgba(14,23,38,.16)}
+  .rail .wrap{display:flex;align-items:center;gap:14px}
+  .rail .bar{flex:1;height:7px;border-radius:99px;background:rgba(255,255,255,.17);overflow:hidden;
+    min-width:60px}
+  .rail .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--mint),#2bb673);
+    transition:width .3s}
+  .rail b{font-size:13.5px;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .rail span{font-size:12px;color:#9fb0c7;white-space:nowrap}
+  main{padding-bottom:70px}
+
+  footer{border-top:1px solid var(--line);padding:34px 0 46px;color:var(--mute);font-size:13px}
+  footer b{color:var(--ink)}
+  footer p{margin:0 0 9px;max-width:92ch}
+  .toast{position:fixed;left:50%;bottom:66px;transform:translateX(-50%) translateY(14px);
+    background:var(--ink);color:#fff;padding:10px 17px;border-radius:9px;font-size:13.4px;
+    opacity:0;pointer-events:none;transition:.24s;z-index:60}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  .hidden{display:none !important}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="/logo.svg" alt=""><span>Backprop<i>.school</i></span></a>
+    <span class="sp"></span>
+    <a class="nlink hide" href="#tracks">Tracks</a>
+    <a class="nlink hide" href="#retired">Retired exams</a>
+    <a class="nlink" href="#courses">All 133</a>
+  </div>
+</nav>
+
+<header id="top">
+  <div class="wrap">
+    <span class="kicker">Verified by hand &middot; 12 November 2026</span>
+    <h1>Every AI course worth taking. <em>Checked this month.</em></h1>
+    <p class="lede">Most AI learning roadmaps still send people to exams that no longer exist. This one does not.
+      133 courses across 19 providers, each with its real cost, its current exam code, and an honest note on
+      whether it is worth your time. 100 of them are free.</p>
+    <div class="stats">
+      <div><b>133</b><span>courses checked</span></div>
+      <div><b>100</b><span>completely free</span></div>
+      <div><b>58</b><span>award a certificate</span></div>
+      <div><b>19</b><span>providers</span></div>
+      <div><b>5</b><span>retired exams flagged</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="tracks">
+  <div class="wrap">
+    <div class="shead">
+      <h2>Start from the job you want</h2>
+      <p>Each track filters the list to what that role actually needs. These are not marketing labels: the
+        split follows what employers ask for, which is why AI Engineer and Research share so little.</p>
+    </div>
+    <div class="tracks" id="trackgrid"></div>
+  </div>
+</section>
+
+<section id="retired" style="padding-top:8px">
+  <div class="wrap">
+    <div class="alert">
+      <h3>Five exams that retired in 2026, and what replaced them</h3>
+      <p>Check the code before you book anything. Most roadmaps still circulating online send people to these.</p>
+      <table>
+        <thead><tr><th>Code</th><th>Was</th><th>Status</th><th>Take instead</th></tr></thead>
+        <tbody id="retiredrows"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<div class="fbar" id="courses">
+  <div class="wrap row">
+    <button class="btn pill" id="togg" aria-expanded="false">Filters</button>
+    <input class="search" id="q" type="search" placeholder="Search 133 courses" aria-label="Search courses">
+    <span id="chips" style="display:flex;gap:6px"></span>
+    <span class="sp" style="flex:1"></span>
+    <button class="btn" id="copydone">Copy done</button>
+    <button class="btn" id="clear">Reset</button>
+  </div>
+  <div class="panel hidden" id="panel">
+    <div class="wrap">
+      <div class="frow"><span class="lbl">Cost</span>
+        <button class="btn on" data-c="all">Any</button>
+        <button class="btn" data-c="free">Free only</button>
+        <button class="btn" data-c="cert">Has certificate</button>
+        <button class="btn" data-c="core">Core only</button>
+        <button class="btn" data-c="todo">Not done</button>
+      </div>
+      <div class="frow"><span class="lbl">Level</span>
+        <button class="btn on" data-l="all">Any</button>
+        <button class="btn" data-l="beginner">Beginner</button>
+        <button class="btn" data-l="intermediate">Intermediate</button>
+        <button class="btn" data-l="advanced">Advanced</button>
+      </div>
+      <div class="frow"><span class="lbl">Topic</span><span id="topicbtns" style="display:contents"></span></div>
+      <div class="frow"><span class="lbl">Provider</span><span id="platbtns" style="display:contents"></span></div>
+    </div>
+  </div>
+</div>
+
+<section style="padding-top:22px">
+  <div class="wrap"><div id="list"></div></div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>How this list is maintained.</b> Every entry was checked against the provider's own pages on
+      12 November 2026: the cost, the hours, whether a certificate is awarded, and for certifications the live
+      exam code. Where a provider's own marketing disagreed with its terms, the terms won.</p>
+    <p><b>Nothing here is an affiliate link.</b> 100 of the 133 courses are free, which makes most of this list
+      worth nothing in commission. That is rather the point: the ranking is not for sale.</p>
+    <p><b>Prices change and courses retire.</b> Confirm before you pay. If you find something out of date,
+      that is a bug worth reporting.</p>
+    <p style="color:#94a3b8">Backprop is an independent project. Not affiliated with, endorsed by, or sponsored
+      by any provider listed. Provider names and exam codes are used descriptively to identify their own courses.</p>
+  </div>
+</footer>
+</main>
+
+<div class="rail">
+  <div class="wrap">
+    <b id="pdone">0 / 133</b>
+    <span class="bar"><i id="pbar"></i></span>
+    <span id="pnote">Tick courses as you finish them. Progress saves in this browser.</span>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const KEY="backprop.v1";
+let D=null, done={}, track="all", cost="all", level="all", topic="all", plat="all", q="";
+try{ done=JSON.parse(localStorage.getItem(KEY))||{}; }catch(e){ done={}; }
+const save=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(done)); }catch(e){} };
+const FREE=["free","audit","beta","freecert"];
+const esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const toast=m=>{const t=document.getElementById("toast");t.textContent=m;t.classList.add("show");
+  setTimeout(()=>t.classList.remove("show"),2000);};
+
+async function boot(){
+  try{
+    const r=await fetch("./courses.json");
+    if(!r.ok) throw new Error("HTTP "+r.status);
+    D=await r.json();
+  }catch(e){
+    document.getElementById("list").innerHTML=
+      '<div class="empty">Could not load the course list. Reload the page.</div>';
+    return;
+  }
+  const n=D.courses.length;
+  document.title="Backprop — "+n+" verified AI, ML and data science courses";
+
+  document.getElementById("trackgrid").innerHTML=Object.entries(D.tracks).map(([k,v])=>{
+    const c=D.courses.filter(x=>x.tracks.includes(k));
+    const f=c.filter(x=>FREE.includes(x.cost)).length;
+    return `<button class="tcard" data-tr="${k}"><b>${esc(v.name)}</b><p>${esc(v.blurb)}</p>
+      <span class="n">${c.length} courses &middot; ${f} free</span></button>`;}).join("");
+
+  document.getElementById("retiredrows").innerHTML=D.retired.map(r=>
+    `<tr><td class="c mono">${esc(r.code)}</td><td>${esc(r.name)}</td>
+     <td>${esc(r.when)}</td><td>${esc(r.instead)}</td></tr>`).join("");
+
+  document.getElementById("topicbtns").innerHTML=
+    '<button class="btn on" data-t="all">Any</button>'+
+    Object.entries(D.topics).map(([k,v])=>`<button class="btn" data-t="${k}">${esc(v)}</button>`).join("");
+  document.getElementById("platbtns").innerHTML=
+    '<button class="btn on" data-p="all">Any</button>'+
+    Object.entries(D.platforms).map(([k,v])=>`<button class="btn" data-p="${k}">${esc(v.name)}</button>`).join("");
+
+  render();
+}
+
+function visible(){
+  return D.courses.filter(c=>{
+    if(track!=="all" && !c.tracks.includes(track)) return false;
+    if(level!=="all" && c.level!==level) return false;
+    if(topic!=="all" && c.topic!==topic) return false;
+    if(plat!=="all" && c.platform!==plat) return false;
+    if(cost==="free" && !FREE.includes(c.cost)) return false;
+    if(cost==="cert" && !c.cert) return false;
+    if(cost==="core" && !c.core) return false;
+    if(cost==="todo" && done[c.id]) return false;
+    if(q){
+      const h=(c.name+" "+c.why+" "+D.platforms[c.platform].name+" "+D.topics[c.topic]).toLowerCase();
+      if(!h.includes(q)) return false;
+    }
+    return true;
+  });
+}
+
+function costTag(k){
+  const cls = k==="freecert" ? "t-best" : FREE.includes(k) ? "t-free"
+            : (k==="fee"||k==="paid") ? "t-fee" : "t-sub";
+  return `<span class="t ${cls}">${esc(D.costs[k]||k)}</span>`;
+}
+
+function render(){
+  const vis=visible();
+  const byTopic={};
+  vis.forEach(c=>{ (byTopic[c.topic]=byTopic[c.topic]||[]).push(c); });
+  const order=Object.keys(D.topics).filter(k=>byTopic[k]);
+
+  document.getElementById("list").innerHTML = vis.length ? order.map(k=>{
+    const items=byTopic[k].slice().sort((a,b)=>(b.core-a.core)||a.name.localeCompare(b.name));
+    const f=items.filter(x=>FREE.includes(x.cost)).length;
+    return `<div class="gh"><h3>${esc(D.topics[k])}</h3>
+        <span>${items.length} course${items.length>1?"s":""} &middot; ${f} free</span></div>
+      <div class="glist">${items.map(card).join("")}</div>`;
+  }).join("") : '<div class="empty"><b>Nothing matches those filters.</b><br>Try clearing one of them.</div>';
+
+  const total=D.courses.length, d=D.courses.filter(c=>done[c.id]).length;
+  document.getElementById("pdone").textContent=d+" / "+total;
+  document.getElementById("pbar").style.width=(d/total*100)+"%";
+  document.getElementById("pnote").textContent = d===0
+    ? "Tick courses as you finish them. Progress saves in this browser."
+    : Math.round(d/total*100)+"% complete. "+vis.length+" courses shown.";
+
+  const ch=[];
+  if(track!=="all") ch.push(["tr",D.tracks[track].name]);
+  if(cost!=="all")  ch.push(["c",{free:"Free only",cert:"Has certificate",core:"Core only",todo:"Not done"}[cost]]);
+  if(level!=="all") ch.push(["l",level[0].toUpperCase()+level.slice(1)]);
+  if(topic!=="all") ch.push(["t",D.topics[topic]]);
+  if(plat!=="all")  ch.push(["p",D.platforms[plat].name]);
+  document.getElementById("chips").innerHTML=ch.map(([k,v])=>
+    `<span class="chip"><b>${esc(v)}</b><i data-x="${k}" title="Clear">&times;</i></span>`).join("");
+}
+
+function card(c){
+  const p=D.platforms[c.platform].name;
+  return `<div class="c ${done[c.id]?"done":""}">
+    <input class="cb" type="checkbox" data-id="${c.id}" ${done[c.id]?"checked":""}
+      aria-label="Mark ${esc(c.name)} complete">
+    <div class="cbody">
+      <div class="cn">${c.core?'<span class="t t-core">CORE</span> ':""}<a href="${esc(c.url)}">${esc(c.name)}</a></div>
+      <p class="cwhy">${esc(c.why)}</p>
+      <div class="meta">
+        <span class="t t-plat">${esc(p)}</span>
+        <span class="t t-top">${esc(D.topics[c.topic])}</span>
+        <span class="t t-lvl">${esc(c.level)}</span>
+        ${costTag(c.cost)}
+        ${c.cert?'<span class="t t-cert">CERTIFICATE</span>':""}
+        <span class="hrs">${esc(c.hours)}</span>
+      </div>
+      <div class="url"><code>${esc(c.url.replace(/^https?:\/\//,""))}</code>
+        <button class="mini" data-cp="${esc(c.url)}">Copy link</button></div>
+    </div></div>`;
+}
+
+/* ---------- events ---------- */
+const panel=document.getElementById("panel"), togg=document.getElementById("togg");
+togg.onclick=()=>{ const open=panel.classList.contains("hidden");
+  panel.classList.toggle("hidden",!open); togg.setAttribute("aria-expanded",open?"true":"false"); };
+
+function setGroup(sel,attr,val,fn){
+  document.querySelectorAll(sel).forEach(b=>b.classList.toggle("on",b.dataset[attr]===val));
+  fn(val); render();
+}
+
+document.addEventListener("click",async e=>{
+  const cp=e.target.closest("[data-cp]");
+  if(cp){ e.preventDefault();
+    try{ await navigator.clipboard.writeText(cp.dataset.cp); toast("Link copied"); }
+    catch(err){ toast("Select the address and copy it"); } return; }
+
+  const a=e.target.closest("a[href^='http']");
+  if(a){ let w=null; try{ w=window.open(a.href,"_blank","noopener"); }catch(err){}
+    if(!w){ e.preventDefault();
+      try{ await navigator.clipboard.writeText(a.href); toast("Opening blocked here. Link copied, paste in a new tab"); }
+      catch(err){ toast("Copy the address shown under the course"); } }
+    return; }
+
+  const tr=e.target.closest("[data-tr]");
+  if(tr){ const k=tr.dataset.tr; track = track===k ? "all" : k;
+    document.querySelectorAll("[data-tr]").forEach(x=>x.classList.toggle("on",x.dataset.tr===track));
+    render(); document.getElementById("courses").scrollIntoView({block:"start"}); return; }
+
+  const bc=e.target.closest("[data-c]"); if(bc) return setGroup("[data-c]","c",bc.dataset.c,v=>cost=v);
+  const bl=e.target.closest("[data-l]"); if(bl) return setGroup("[data-l]","l",bl.dataset.l,v=>level=v);
+  const bt=e.target.closest("[data-t]"); if(bt) return setGroup("[data-t]","t",bt.dataset.t,v=>topic=v);
+  const bp=e.target.closest("[data-p]"); if(bp) return setGroup("[data-p]","p",bp.dataset.p,v=>plat=v);
+
+  const x=e.target.closest("[data-x]");
+  if(x){ const k=x.dataset.x;
+    if(k==="tr"){ track="all"; document.querySelectorAll("[data-tr]").forEach(b=>b.classList.remove("on")); }
+    if(k==="c")  setGroup("[data-c]","c","all",v=>cost=v);
+    if(k==="l")  setGroup("[data-l]","l","all",v=>level=v);
+    if(k==="t")  setGroup("[data-t]","t","all",v=>topic=v);
+    if(k==="p")  setGroup("[data-p]","p","all",v=>plat=v);
+    render(); }
+});
+
+document.addEventListener("change",e=>{
+  const id=e.target.dataset.id; if(!id) return;
+  if(e.target.checked) done[id]=1; else delete done[id];
+  save(); render();
+});
+
+let qt; document.getElementById("q").addEventListener("input",e=>{
+  clearTimeout(qt); qt=setTimeout(()=>{ q=e.target.value.trim().toLowerCase(); render(); },140); });
+
+document.getElementById("clear").onclick=()=>{
+  track=cost=level=topic=plat="all"; q=""; document.getElementById("q").value="";
+  document.querySelectorAll("[data-tr]").forEach(b=>b.classList.remove("on"));
+  [["[data-c]","c"],["[data-l]","l"],["[data-t]","t"],["[data-p]","p"]].forEach(([s,a])=>
+    document.querySelectorAll(s).forEach(b=>b.classList.toggle("on",b.dataset[a]==="all")));
+  render(); toast("Filters cleared");
+};
+
+document.getElementById("copydone").onclick=async()=>{
+  const d=D.courses.filter(c=>done[c.id]);
+  const txt=d.length ? "Completed:\n"+d.map(c=>"- "+c.name+" ("+D.platforms[c.platform].name+")").join("\n")
+                     : "Nothing ticked yet.";
+  try{ await navigator.clipboard.writeText(txt); toast(d.length+" completed courses copied"); }
+  catch(e){ toast("Copy blocked by the browser"); }
+};
+
+boot();
+</script>
+</body>
+</html>

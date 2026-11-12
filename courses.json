@@ -1,0 +1,2617 @@
+{
+ "updated": "2026-11-12",
+ "platforms": {
+  "dc": {
+   "name": "DataCamp",
+   "kind": "sub"
+  },
+  "gg": {
+   "name": "Google",
+   "kind": "free"
+  },
+  "cs": {
+   "name": "Coursera",
+   "kind": "mixed"
+  },
+  "hf": {
+   "name": "Hugging Face",
+   "kind": "free"
+  },
+  "dl": {
+   "name": "DeepLearning.AI",
+   "kind": "mixed"
+  },
+  "lc": {
+   "name": "LangChain",
+   "kind": "free"
+  },
+  "hv": {
+   "name": "Harvard",
+   "kind": "mixed"
+  },
+  "or": {
+   "name": "Oracle",
+   "kind": "free"
+  },
+  "li": {
+   "name": "LinkedIn",
+   "kind": "sub"
+  },
+  "aws": {
+   "name": "AWS",
+   "kind": "mixed"
+  },
+  "ms": {
+   "name": "Microsoft",
+   "kind": "mixed"
+  },
+  "nv": {
+   "name": "NVIDIA",
+   "kind": "mixed"
+  },
+  "rs": {
+   "name": "Rust",
+   "kind": "free"
+  },
+  "rc": {
+   "name": "React",
+   "kind": "free"
+  },
+  "oa": {
+   "name": "OpenAI",
+   "kind": "free"
+  },
+  "an": {
+   "name": "Anthropic",
+   "kind": "free"
+  },
+  "ff": {
+   "name": "fast.ai",
+   "kind": "free"
+  },
+  "fc": {
+   "name": "freeCodeCamp",
+   "kind": "free"
+  },
+  "un": {
+   "name": "University",
+   "kind": "free"
+  }
+ },
+ "topics": {
+  "ml": "Machine learning",
+  "llm": "LLMs and prompting",
+  "rag": "RAG and vector DBs",
+  "agt": "AI agents",
+  "eval": "Fine-tuning and evaluation",
+  "ops": "MLOps, cloud and certs",
+  "cv": "Computer vision",
+  "eth": "Ethics and governance",
+  "py": "Python and data",
+  "port": "Portfolio and tooling",
+  "sys": "Systems, GPU and Rust",
+  "web": "Web and product"
+ },
+ "tracks": {
+  "aie": {
+   "name": "AI Engineer",
+   "blurb": "Build products on top of models: LLM APIs, RAG, agents, evaluation, deployment. The fastest growing of these roles."
+  },
+  "mle": {
+   "name": "ML Engineer",
+   "blurb": "Train, tune and ship models. Classical ML and deep learning plus the production layer."
+  },
+  "ds": {
+   "name": "Data Scientist",
+   "blurb": "Analysis, statistics and modelling. Python and data foundations first, then machine learning."
+  },
+  "ops": {
+   "name": "MLOps and Platform",
+   "blurb": "Pipelines, deployment, monitoring and cloud. Where the cloud certifications pay off."
+  },
+  "res": {
+   "name": "Research",
+   "blurb": "The theory underneath: deep learning, NLP, computer vision, evaluation. University-grade material."
+  },
+  "sys": {
+   "name": "Systems and GPU",
+   "blurb": "CUDA, Rust, inference engines and edge AI. Small field, very few candidates, high leverage."
+  },
+  "prod": {
+   "name": "Product Builder",
+   "blurb": "Ship a working AI product end to end: model, API, front end, deploy."
+  },
+  "new": {
+   "name": "Complete Beginner",
+   "blurb": "No coding or AI background assumed. Free, gentle, well-made starting points only."
+  }
+ },
+ "costs": {
+  "free": "Free",
+  "sub": "Subscription",
+  "audit": "Audit free",
+  "beta": "Free (beta)",
+  "fee": "Exam fee",
+  "freecert": "Free + free exam",
+  "paid": "Paid"
+ },
+ "retired": [
+  {
+   "code": "Microsoft AI-900",
+   "name": "Azure AI Fundamentals",
+   "when": "Retired 30 June 2026",
+   "instead": "Take AI-901 instead"
+  },
+  {
+   "code": "Microsoft AI-102",
+   "name": "Azure AI Engineer Associate",
+   "when": "Retired 30 June 2026",
+   "instead": "Take AI-103 instead, a new certification rather than a rename"
+  },
+  {
+   "code": "Microsoft DP-100",
+   "name": "Azure Data Scientist Associate",
+   "when": "Retired 1 June 2026",
+   "instead": "Take AI-300 instead"
+  },
+  {
+   "code": "AWS MLS-C01",
+   "name": "Machine Learning Specialty",
+   "when": "Last exam 31 March 2026",
+   "instead": "Take Machine Learning Engineer Associate instead"
+  },
+  {
+   "code": "AWS MLA-C01",
+   "name": "ML Engineer Associate, first version",
+   "when": "Last English exam 28 Sept 2026",
+   "instead": "Take MLA-C02"
+  }
+ ],
+ "courses": [
+  {
+   "id": "p1a",
+   "name": "AI Fundamentals (5-course track)",
+   "platform": "dc",
+   "topic": "ml",
+   "cost": "sub",
+   "hours": "9 hrs",
+   "core": false,
+   "cert": true,
+   "url": "https://www.datacamp.com/tracks/ai-fundamentals",
+   "why": "Covers ITOL's AI Engineering Fundamentals module end to end: ML, deep learning, NLP, generative AI and LLM concepts.",
+   "phase": 1,
+   "level": "beginner",
+   "tracks": [
+    "mle",
+    "ds",
+    "res",
+    "new"
+   ]
+  },
+  {
+   "id": "p1b",
+   "name": "Introduction to Generative AI",
+   "platform": "gg",
+   "topic": "llm",
+   "cost": "free",
+   "hours": "45 min",
+   "core": false,
+   "cert": true,
+   "url": "https://cloud.google.com/learn/training/machinelearning-ai",
+   "why": "Free Google Skills micro-course with a badge. Forty-five minutes for a Google-branded line on the profile.",
+   "phase": 1,
+   "level": "beginner",
+   "tracks": [
+    "aie",
+    "prod",
+    "new"
+   ]
+  },
+  {
+   "id": "p1li",
+   "name": "Career Essentials in Generative AI (Microsoft and LinkedIn)",
+   "platform": "li",
+   "topic": "llm",
+   "cost": "free",
+   "hours": "~4 to 6 hrs",
+   "core": false,
+   "cert": true,
+   "url": "https://www.linkedin.com/learning/",
+   "why": "Free learning path with a co-branded Microsoft and LinkedIn professional certificate after a final exam. Be clear-eyed: it is a non-technical primer weighted towards Copilot, and because it is free and short, thousands of people hold it. Four hours for a certificate that sits natively on your LinkedIn profile, nothing more.",
+   "phase": 1,
+   "level": "beginner",
+   "tracks": [
+    "aie",
+    "prod",
+    "new"
+   ]
+  },
+  {
+   "id": "p1c",
+   "name": "Kaggle Learn: Python, Pandas, Data Cleaning",
+   "platform": "gg",
+   "topic": "py",
+   "cost": "free",
+   "hours": "~12 hrs",
+   "core": false,
+   "cert": false,
+   "url": "https://www.kaggle.com/learn",
+   "why": "Replaces ITOL's Python Fundamentals and Python for Data modules. Free, Google-owned, exercise-driven. Skip unless you want the completion record.",
+   "phase": 1,
+   "level": "intermediate",
+   "tracks": [
+    "new",
+    "ds"
+   ]
+  },
+  {
+   "id": "p2hf1",
+   "name": "Hugging Face LLM Course",
+   "platform": "hf",
+   "topic": "llm",
+   "cost": "free",
+   "hours": "multi-unit",
+   "core": true,
+   "cert": false,
+   "url": "https://huggingface.co/learn/llm-course/chapter1/1",
+   "why": "Free. Large language models and NLP taught with transformers, datasets and tokenizers by the people who maintain them. This is ITOL's AI Engineering Fundamentals module, done properly, at zero cost.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2hf2",
+   "name": "Hugging Face Agents Course",
+   "platform": "hf",
+   "topic": "agt",
+   "cost": "free",
+   "hours": "5 chapters",
+   "core": true,
+   "cert": true,
+   "url": "https://huggingface.co/agents-course",
+   "why": "Free and certified. Agent fundamentals (tools, thoughts, actions, observations), then the same patterns in smolagents, LangGraph and LlamaIndex, real use cases, and a final assignment building an agent for the GAIA benchmark. ITOL's curriculum has no agent content at all.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2hf3",
+   "name": "Hugging Face MCP Course",
+   "platform": "hf",
+   "topic": "agt",
+   "cost": "free",
+   "hours": "3 units",
+   "core": true,
+   "cert": true,
+   "url": "https://huggingface.co/learn/mcp-course/en/unit0/introduction",
+   "why": "Free, built in partnership with Anthropic. MCP architecture and core concepts, then an end-to-end application, then a deployed one using the Hugging Face ecosystem. MCP is now in job specs and in nobody's paid bootcamp curriculum.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2dl1",
+   "name": "Agentic AI (Andrew Ng)",
+   "platform": "dl",
+   "topic": "agt",
+   "cost": "beta",
+   "hours": "~10 to 23 hrs",
+   "core": true,
+   "cert": true,
+   "url": "https://www.deeplearning.ai/courses/",
+   "why": "Five modules, three of them ending in a graded programming assignment: reflection, tool use and the Model Context Protocol, evaluation and error analysis, planning and multi-agent workflows. Vendor-neutral, so the patterns outlive whichever framework wins.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2lc1",
+   "name": "Introduction to LangGraph (Python)",
+   "platform": "lc",
+   "topic": "agt",
+   "cost": "free",
+   "hours": "~6 hrs, 55 lessons",
+   "core": true,
+   "cert": false,
+   "url": "https://academy.langchain.com/courses/intro-to-langgraph",
+   "why": "LangChain Academy's flagship, free, first-party and code-first: state, nodes, edges, memory, human-in-the-loop, then deployment. Deeper on agent architecture than any of the short courses above, and kept current with the libraries by the people who ship them.",
+   "phase": 2,
+   "level": "beginner",
+   "tracks": [
+    "aie",
+    "prod",
+    "new"
+   ]
+  },
+  {
+   "id": "p2lc2",
+   "name": "Introduction to LangChain (Python)",
+   "platform": "lc",
+   "topic": "llm",
+   "cost": "free",
+   "hours": "self-paced",
+   "core": false,
+   "cert": false,
+   "url": "https://academy.langchain.com/",
+   "why": "Free. The framework fundamentals under everything else in this phase. Start here if the DeepLearning.AI LangChain short courses move too fast.",
+   "phase": 2,
+   "level": "beginner",
+   "tracks": [
+    "aie",
+    "prod",
+    "new"
+   ]
+  },
+  {
+   "id": "p2lc3",
+   "name": "Introduction to Deep Agents",
+   "platform": "lc",
+   "topic": "agt",
+   "cost": "free",
+   "hours": "self-paced",
+   "core": false,
+   "cert": false,
+   "url": "https://academy.langchain.com/",
+   "why": "Free. Deep Agents is the agent harness sitting above LangChain the framework and LangGraph the runtime. Newest layer of the stack, so almost nobody interviewing has touched it.",
+   "phase": 2,
+   "level": "beginner",
+   "tracks": [
+    "aie",
+    "prod",
+    "new"
+   ]
+  },
+  {
+   "id": "p2lc4",
+   "name": "Project: Ambient Agents with LangGraph",
+   "platform": "lc",
+   "topic": "agt",
+   "cost": "free",
+   "hours": "2.5 hrs, 28 lessons",
+   "core": true,
+   "cert": false,
+   "url": "https://academy.langchain.com/courses/ambient-agents",
+   "why": "Free. Build an email assistant from scratch: LangGraph fundamentals, agent evaluation with LangSmith, human-in-the-loop review, memory, then deployment connected to Gmail. An end-to-end production agent, which is exactly what ITOL's chatbot module is not.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2lc5",
+   "name": "Project: Deep Research with LangGraph",
+   "platform": "lc",
+   "topic": "agt",
+   "cost": "free",
+   "hours": "1.5 hrs, 27 lessons",
+   "core": true,
+   "cert": false,
+   "url": "https://academy.langchain.com/courses/deep-research-with-langgraph",
+   "why": "Free. A user scoping agent, a multi-agent research team with a supervisor, tool integration via MCP, and LangSmith evaluation throughout. Multi-agent supervision is a 2026 job-spec line item.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2aws1",
+   "name": "Introduction to Agentic AI on AWS",
+   "platform": "aws",
+   "topic": "agt",
+   "cost": "free",
+   "hours": "digital course",
+   "core": true,
+   "cert": true,
+   "url": "https://aws.amazon.com/training/",
+   "why": "Free on AWS Skill Builder, and it carries a microcredential rather than just a completion tick. Agentic architectures on AWS, which is where the Bedrock and AgentCore job specs point.",
+   "phase": 2,
+   "level": "beginner",
+   "tracks": [
+    "aie",
+    "prod",
+    "new"
+   ]
+  },
+  {
+   "id": "p2aws2",
+   "name": "Agentic AI Frameworks Deep Dive",
+   "platform": "aws",
+   "topic": "agt",
+   "cost": "free",
+   "hours": "4 sessions, ~6 hrs",
+   "core": true,
+   "cert": false,
+   "url": "https://aws.amazon.com/training/",
+   "why": "Free four-session learning plan on Skill Builder giving practical framework expertise. Pair it with the LangChain Academy projects so you can speak to both the open framework and the AWS-native route.",
+   "phase": 2,
+   "level": "advanced",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2ms1",
+   "name": "AI-103 learning path: Azure AI Apps and Agents Developer",
+   "platform": "ms",
+   "topic": "agt",
+   "cost": "free",
+   "hours": "multi-module",
+   "core": true,
+   "cert": false,
+   "url": "https://learn.microsoft.com/",
+   "why": "Free on Microsoft Learn, with interactive sandboxes. Generative AI apps and agents built on Microsoft Foundry. Note this is AI-103, the current path. AI-102 retired on 30 June 2026 and most roadmaps online still name it.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2li1",
+   "name": "Become an AI Engineer (learning path)",
+   "platform": "li",
+   "topic": "llm",
+   "cost": "sub",
+   "hours": "~20 hrs",
+   "core": false,
+   "cert": true,
+   "url": "https://www.linkedin.com/learning/paths/become-an-ai-engineer",
+   "why": "Covers LLMs, fine-tuning, RAG architecture, vector databases, cloud deployment and responsible AI. Skip the first two courses, Python for Data Science and Machine Learning Essential Training Parts 1 and 2, which are over 13 hours of material you already know. Start at the LLM section.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2a",
+   "name": "Associate AI Engineer for Data Scientists (13-course career track)",
+   "platform": "dc",
+   "topic": "llm",
+   "cost": "sub",
+   "hours": "40 hrs",
+   "core": true,
+   "cert": true,
+   "url": "https://www.datacamp.com/tracks/associate-ai-engineer-for-data-scientists",
+   "why": "The structured spine of this plan. scikit-learn, Hugging Face, OpenAI API, fine-tuning, testing, Git and MLOps, with an AI Engineer certification at the end. One track replaces most of ITOL's paid curriculum.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2e",
+   "name": "Retrieval Augmented Generation (RAG)",
+   "platform": "cs",
+   "topic": "rag",
+   "cost": "audit",
+   "hours": "~26 hrs",
+   "core": true,
+   "cert": true,
+   "url": "https://www.coursera.org/learn/retrieval-augmented-generation-rag",
+   "why": "DeepLearning.AI on Coursera. Replaces ITOL's RAG module and goes much further: semantic search, BM25, Reciprocal Rank Fusion, chunking, indexing and Weaviate on a real news dataset, plus evaluation and production concerns.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2dl2",
+   "name": "Building Agentic RAG with LlamaIndex",
+   "platform": "dl",
+   "topic": "rag",
+   "cost": "beta",
+   "hours": "~1 hr",
+   "core": true,
+   "cert": false,
+   "url": "https://www.deeplearning.ai/courses/?types=short_course",
+   "why": "Agentic retrieval rather than single-shot RAG: document Q and A, summarisation, and routing over multiple sources. The next step up from ITOL's Pinecone lesson.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2dl3",
+   "name": "AI Agents in LangGraph",
+   "platform": "dl",
+   "topic": "agt",
+   "cost": "beta",
+   "hours": "~90 min",
+   "core": true,
+   "cert": false,
+   "url": "https://www.deeplearning.ai/courses/?types=short_course",
+   "why": "Agentic workflows with LangGraph and Tavily agentic search. Pairs directly with the LangChain course in Phase 2.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2f",
+   "name": "RAG for Generative AI Applications (4-course specialization)",
+   "platform": "cs",
+   "topic": "rag",
+   "cost": "sub",
+   "hours": "multi-week",
+   "core": true,
+   "cert": true,
+   "url": "https://www.coursera.org/specializations/rag-for-generative-ai-applications",
+   "why": "LangChain, LlamaIndex, ChromaDB, FAISS and Gradio front ends. ITOL's chatbot project module, taught properly and with a certificate at the end.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2g",
+   "name": "Project: Generative AI Applications with RAG and LangChain",
+   "platform": "cs",
+   "topic": "rag",
+   "cost": "audit",
+   "hours": "~8 hrs",
+   "core": true,
+   "cert": true,
+   "url": "https://www.coursera.org/learn/project-generative-ai-applications-with-rag-and-langchain",
+   "why": "IBM. Build a QA bot over your own documents with a vector store and a Gradio interface. A direct, better substitute for ITOL's Customer Service Chatbot project.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2b",
+   "name": "Working with the OpenAI API",
+   "platform": "dc",
+   "topic": "llm",
+   "cost": "sub",
+   "hours": "3 hrs",
+   "core": true,
+   "cert": false,
+   "url": "https://www.datacamp.com/tracks/career",
+   "why": "ITOL's prompt engineering module at API level rather than chat level: system prompts, parameters, structured output.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2c",
+   "name": "Developing AI Systems with the OpenAI API",
+   "platform": "dc",
+   "topic": "llm",
+   "cost": "sub",
+   "hours": "4 hrs",
+   "core": true,
+   "cert": false,
+   "url": "https://www.datacamp.com/tracks/career",
+   "why": "Moderation, function calling, error handling and cost control. The parts of LLM work that separate a demo from a product.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2d",
+   "name": "Developing LLM Applications with LangChain",
+   "platform": "dc",
+   "topic": "llm",
+   "cost": "sub",
+   "hours": "4 hrs",
+   "core": true,
+   "cert": false,
+   "url": "https://www.datacamp.com/tracks/career",
+   "why": "DataCamp names this as the app-building layer the AI Engineer track deliberately skips. Chains, agents, retrieval.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2l",
+   "name": "5-Day Gen AI Intensive Course with Google",
+   "platform": "gg",
+   "topic": "llm",
+   "cost": "free",
+   "hours": "~15 hrs",
+   "core": true,
+   "cert": false,
+   "url": "https://www.kaggle.com/learn",
+   "why": "Free, self-paced on Kaggle Learn. Foundation models, prompt engineering, embeddings, agents, domain-specific LLMs and MLOps for GenAI, with whitepapers by Google ML researchers and hands-on code labs.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2m",
+   "name": "5-Day AI Agents Intensive Course with Google",
+   "platform": "gg",
+   "topic": "agt",
+   "cost": "free",
+   "hours": "~15 hrs",
+   "core": true,
+   "cert": false,
+   "url": "https://www.kaggle.com/learn-guide/5-day-agents",
+   "why": "Free. Build agents with the Agent Development Kit and Gemini, multi-agent systems using the A2A protocol, then deploy to Vertex AI Agent Engine. Production deployment is where ITOL stops short.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2h",
+   "name": "Vector Databases: from Embeddings to Applications",
+   "platform": "cs",
+   "topic": "rag",
+   "cost": "audit",
+   "hours": "~1 hr",
+   "core": true,
+   "cert": false,
+   "url": "https://www.coursera.org/collections/deeplearning-ai-genai-tools",
+   "why": "The embeddings and vector database theory ITOL compresses into one Pinecone lesson.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2dl4",
+   "name": "Multi AI Agent Systems with crewAI",
+   "platform": "dl",
+   "topic": "agt",
+   "cost": "beta",
+   "hours": "~2 hrs",
+   "core": false,
+   "cert": false,
+   "url": "https://www.deeplearning.ai/courses/?types=short_course",
+   "why": "Taught by crewAI's founder. Role-based multi-agent collaboration. Good vocabulary for interviews even if you never ship crewAI.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2dl5",
+   "name": "AI Agentic Design Patterns with AutoGen",
+   "platform": "dl",
+   "topic": "agt",
+   "cost": "beta",
+   "hours": "~95 min",
+   "core": false,
+   "cert": false,
+   "url": "https://www.deeplearning.ai/courses/?types=short_course",
+   "why": "Stays at the conceptual level on the four core agent patterns. Those patterns outlive any framework, which makes this a durable 95 minutes.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2dl6",
+   "name": "DSPy: Build and Optimize Agentic Apps",
+   "platform": "dl",
+   "topic": "agt",
+   "cost": "beta",
+   "hours": "~1 hr",
+   "core": false,
+   "cert": false,
+   "url": "https://www.deeplearning.ai/courses/?types=short_course",
+   "why": "Build, debug and optimise agents with DSPy and MLflow. Programmatic prompt optimisation instead of hand-tuning, which is where serious teams have moved.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2dl7",
+   "name": "Long-Term Agentic Memory with LangGraph",
+   "platform": "dl",
+   "topic": "agt",
+   "cost": "beta",
+   "hours": "~1 hr",
+   "core": false,
+   "cert": false,
+   "url": "https://www.deeplearning.ai/courses/?types=short_course",
+   "why": "Memory beyond the context window. Comes up constantly once an agent has to hold state across sessions.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2i",
+   "name": "LangChain Chat with Your Data",
+   "platform": "cs",
+   "topic": "rag",
+   "cost": "audit",
+   "hours": "~1 hr",
+   "core": false,
+   "cert": false,
+   "url": "https://www.coursera.org/collections/deeplearning-ai-genai-tools",
+   "why": "Document loading, splitting, retrieval and chat memory. Short and directly applicable.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2j",
+   "name": "Functions, Tools and Agents with LangChain",
+   "platform": "cs",
+   "topic": "agt",
+   "cost": "audit",
+   "hours": "~1 hr",
+   "core": false,
+   "cert": false,
+   "url": "https://www.coursera.org/collections/deeplearning-ai-genai-tools",
+   "why": "Tool calling and agent construction, on the Coursera-hosted side of the DeepLearning.AI catalogue.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2k",
+   "name": "ChatGPT Prompt Engineering for Developers",
+   "platform": "cs",
+   "topic": "llm",
+   "cost": "free",
+   "hours": "~1 hr",
+   "core": false,
+   "cert": false,
+   "url": "https://www.coursera.org/collections/deeplearning-ai-genai-tools",
+   "why": "DeepLearning.AI with OpenAI. An hour, free, still the cleanest treatment of what ITOL sells as a full module.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2n",
+   "name": "Knowledge Graphs for RAG",
+   "platform": "cs",
+   "topic": "rag",
+   "cost": "audit",
+   "hours": "~2 hrs",
+   "core": false,
+   "cert": false,
+   "url": "https://www.coursera.org/collections/deeplearning-ai-genai-tools",
+   "why": "With Neo4j. Graph retrieval combined with vector search. A differentiator in interviews.",
+   "phase": 2,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p2o",
+   "name": "Google Prompting Essentials (4-course specialization)",
+   "platform": "gg",
+   "topic": "llm",
+   "cost": "audit",
+   "hours": "1 to 4 wks",
+   "core": false,
+   "cert": true,
+   "url": "https://www.coursera.org/specializations/prompting-essentials-google",
+   "why": "Google-branded and well rated, but natural-language prompting only, no Python or APIs. Take it for the badge, not the knowledge.",
+   "phase": 2,
+   "level": "beginner",
+   "tracks": [
+    "aie",
+    "prod",
+    "new"
+   ]
+  },
+  {
+   "id": "p3hf1",
+   "name": "a smol course (post-training)",
+   "platform": "hf",
+   "topic": "eval",
+   "cost": "free",
+   "hours": "short",
+   "core": true,
+   "cert": true,
+   "url": "https://huggingface.co/learn",
+   "why": "Free and certified. Post-training and fine-tuning small models on your own data. This is the fine-tuning ITOL mentions in one bullet of its sentiment project, taught as its own subject.",
+   "phase": 3,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "mle",
+    "res"
+   ]
+  },
+  {
+   "id": "p3a",
+   "name": "Working with Hugging Face",
+   "platform": "dc",
+   "topic": "llm",
+   "cost": "sub",
+   "hours": "4 hrs",
+   "core": true,
+   "cert": false,
+   "url": "https://www.datacamp.com/tracks/associate-ai-engineer-for-data-scientists",
+   "why": "Inside the Associate AI Engineer track. Navigating the Hub, pipelines, pre-trained models. The structured version of the HF LLM Course.",
+   "phase": 3,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p3dl1",
+   "name": "Evaluating AI Agents",
+   "platform": "dl",
+   "topic": "eval",
+   "cost": "beta",
+   "hours": "~2 hrs",
+   "core": true,
+   "cert": false,
+   "url": "https://www.deeplearning.ai/courses/?types=short_course",
+   "why": "With Arize AI. Tracing, evaluation metrics and structured error analysis for agent systems. ITOL teaches a confusion matrix and stops; this is what production evaluation actually looks like.",
+   "phase": 3,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "mle",
+    "res"
+   ]
+  },
+  {
+   "id": "p3dl2",
+   "name": "Evaluating and Improving Agentic Applications",
+   "platform": "dl",
+   "topic": "eval",
+   "cost": "beta",
+   "hours": "~2 hrs",
+   "core": true,
+   "cert": false,
+   "url": "https://www.deeplearning.ai/courses/?types=short_course",
+   "why": "The follow-on: taking evaluation results and systematically improving the system. Being able to describe this loop is what gets a junior AI Engineer hired.",
+   "phase": 3,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "mle",
+    "res"
+   ]
+  },
+  {
+   "id": "p3lc1",
+   "name": "Quickstart: LangSmith Essentials",
+   "platform": "lc",
+   "topic": "eval",
+   "cost": "free",
+   "hours": "short",
+   "core": true,
+   "cert": false,
+   "url": "https://academy.langchain.com/",
+   "why": "Free. Tracing, datasets, evaluators and monitoring for agent systems. LangChain Academy names this as the starting point for agent observability and improvement. Pair it with the DeepLearning.AI evaluation courses above and you can actually answer 'how do you know it works'.",
+   "phase": 3,
+   "level": "beginner",
+   "tracks": [
+    "aie",
+    "mle",
+    "res",
+    "new"
+   ]
+  },
+  {
+   "id": "p3hv1",
+   "name": "Introduction to Neural Networks and Deep Learning with Python",
+   "platform": "hv",
+   "topic": "ml",
+   "cost": "audit",
+   "hours": "self-paced",
+   "core": false,
+   "cert": true,
+   "url": "https://pll.harvard.edu/catalog/702/all",
+   "why": "Harvard. Practical deep learning for people who already write Python. A shorter, better-signposted alternative to the 127-hour Deep Learning Specialization.",
+   "phase": 3,
+   "level": "beginner",
+   "tracks": [
+    "mle",
+    "ds",
+    "res",
+    "new"
+   ]
+  },
+  {
+   "id": "p3e",
+   "name": "Kaggle Learn: Machine Learning Explainability",
+   "platform": "gg",
+   "topic": "eval",
+   "cost": "free",
+   "hours": "~4 hrs",
+   "core": true,
+   "cert": false,
+   "url": "https://www.kaggle.com/learn",
+   "why": "Free. SHAP and permutation importance. Explainability is what gets asked about in regulated-sector interviews.",
+   "phase": 3,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "mle",
+    "res"
+   ]
+  },
+  {
+   "id": "p3b",
+   "name": "Kaggle Learn: Natural Language Processing",
+   "platform": "gg",
+   "topic": "ml",
+   "cost": "free",
+   "hours": "~4 hrs",
+   "core": false,
+   "cert": false,
+   "url": "https://www.kaggle.com/learn",
+   "why": "Free. Text classification foundations under the sentiment analysis project.",
+   "phase": 3,
+   "level": "intermediate",
+   "tracks": [
+    "mle",
+    "ds",
+    "res"
+   ]
+  },
+  {
+   "id": "p3c",
+   "name": "Kaggle Learn: Intro to Deep Learning",
+   "platform": "gg",
+   "topic": "ml",
+   "cost": "free",
+   "hours": "~4 hrs",
+   "core": false,
+   "cert": false,
+   "url": "https://www.kaggle.com/learn",
+   "why": "Free. TensorFlow and Keras on structured data. Fills the neural network claim in ITOL's first module.",
+   "phase": 3,
+   "level": "beginner",
+   "tracks": [
+    "mle",
+    "ds",
+    "res",
+    "new"
+   ]
+  },
+  {
+   "id": "p3hf2",
+   "name": "Hugging Face Diffusion Course",
+   "platform": "hf",
+   "topic": "cv",
+   "cost": "free",
+   "hours": "multi-unit",
+   "core": false,
+   "cert": false,
+   "url": "https://huggingface.co/learn",
+   "why": "Free. Diffusion theory, then generating images and audio with the Diffusers library, up to fine-tuning Stable Diffusion. Optional unless generative media is a direction you want.",
+   "phase": 3,
+   "level": "intermediate",
+   "tracks": [
+    "res",
+    "mle"
+   ]
+  },
+  {
+   "id": "p3dl3",
+   "name": "Deep Learning Specialization (5 courses)",
+   "platform": "dl",
+   "topic": "ml",
+   "cost": "sub",
+   "hours": "~127 hrs",
+   "core": false,
+   "cert": true,
+   "url": "https://www.deeplearning.ai/courses/",
+   "why": "The classic. Only worth the 127 hours if your MSc machine vision module leaves real gaps. Weigh it against your dissertation.",
+   "phase": 3,
+   "level": "intermediate",
+   "tracks": [
+    "mle",
+    "ds",
+    "res"
+   ]
+  },
+  {
+   "id": "p3d",
+   "name": "Deep Learning in Python (5-course track)",
+   "platform": "dc",
+   "topic": "ml",
+   "cost": "sub",
+   "hours": "18 hrs",
+   "core": false,
+   "cert": false,
+   "url": "https://www.datacamp.com/tracks/career",
+   "why": "A much shorter alternative to the Deep Learning Specialization if you just want the working knowledge.",
+   "phase": 3,
+   "level": "intermediate",
+   "tracks": [
+    "mle",
+    "ds",
+    "res"
+   ]
+  },
+  {
+   "id": "p4hv1",
+   "name": "CS50's Introduction to Artificial Intelligence with Python",
+   "platform": "hv",
+   "topic": "ml",
+   "cost": "audit",
+   "hours": "7 wks, 10-30 hrs/wk",
+   "core": true,
+   "cert": true,
+   "url": "https://pll.harvard.edu/course/cs50s-introduction-artificial-intelligence-python",
+   "why": "The strongest name on this page. Graph and adversarial search, knowledge representation, uncertainty, optimisation, machine learning, neural networks and NLP, built around hands-on Python projects. Free in full at cs50.harvard.edu/ai, free to audit on edX, with a paid verified certificate if you want the Harvard credential on the CV. Assumes you already write Python, which you do.",
+   "phase": 4,
+   "level": "beginner",
+   "tracks": [
+    "mle",
+    "ds",
+    "res",
+    "new"
+   ]
+  },
+  {
+   "id": "p4hv2",
+   "name": "Machine Learning and AI with Python",
+   "platform": "hv",
+   "topic": "ml",
+   "cost": "audit",
+   "hours": "self-paced",
+   "core": false,
+   "cert": true,
+   "url": "https://pll.harvard.edu/catalog/702/all",
+   "why": "Harvard. Decision trees as the foundational algorithm, built up into broader ML and AI. Useful counterweight to the deep-learning-first framing everywhere else.",
+   "phase": 4,
+   "level": "intermediate",
+   "tracks": [
+    "mle",
+    "ds",
+    "res"
+   ]
+  },
+  {
+   "id": "p4hv3",
+   "name": "Data Science: Building Machine Learning Models",
+   "platform": "hv",
+   "topic": "ml",
+   "cost": "audit",
+   "hours": "self-paced",
+   "core": false,
+   "cert": true,
+   "url": "https://pll.harvard.edu/catalog/702/all",
+   "why": "Harvard. Model building as a discipline rather than a library call. Optional given your Machine Learning on Big Data module covers similar ground.",
+   "phase": 4,
+   "level": "intermediate",
+   "tracks": [
+    "mle",
+    "ds",
+    "res"
+   ]
+  },
+  {
+   "id": "p4a",
+   "name": "Machine Learning Crash Course",
+   "platform": "gg",
+   "topic": "ml",
+   "cost": "free",
+   "hours": "15 hrs",
+   "core": true,
+   "cert": false,
+   "url": "https://developers.google.com/machine-learning/crash-course",
+   "why": "Free, 15 hours, 130+ exercises, rebuilt to include large language models and AutoML alongside the classical material. Best free technical ML course from any vendor, and it replaces ITOL's entire Machine Learning Fundamentals module.",
+   "phase": 4,
+   "level": "beginner",
+   "tracks": [
+    "mle",
+    "ds",
+    "res",
+    "new"
+   ]
+  },
+  {
+   "id": "p4b",
+   "name": "Kaggle Learn: Intro to ML, Intermediate ML, Feature Engineering",
+   "platform": "gg",
+   "topic": "ml",
+   "cost": "free",
+   "hours": "~12 hrs",
+   "core": false,
+   "cert": false,
+   "url": "https://www.kaggle.com/learn",
+   "why": "Free. Validation, overfitting, pipelines, cross-validation, XGBoost, data leakage, target encoding. Ends in a competition submission you can cite.",
+   "phase": 4,
+   "level": "beginner",
+   "tracks": [
+    "mle",
+    "ds",
+    "res",
+    "new"
+   ]
+  },
+  {
+   "id": "p4c",
+   "name": "Supervised Learning with scikit-learn",
+   "platform": "dc",
+   "topic": "ml",
+   "cost": "sub",
+   "hours": "4 hrs",
+   "core": false,
+   "cert": false,
+   "url": "https://www.datacamp.com/tracks/associate-ai-engineer-for-data-scientists",
+   "why": "Inside the Associate AI Engineer track. The scikit-learn, scaling and regularisation content ITOL lists.",
+   "phase": 4,
+   "level": "intermediate",
+   "tracks": [
+    "mle",
+    "ds",
+    "res"
+   ]
+  },
+  {
+   "id": "p4d",
+   "name": "Unsupervised Learning in Python",
+   "platform": "dc",
+   "topic": "ml",
+   "cost": "sub",
+   "hours": "4 hrs",
+   "core": false,
+   "cert": false,
+   "url": "https://www.datacamp.com/tracks/associate-ai-engineer-for-data-scientists",
+   "why": "Also inside the track. Clustering and dimensionality reduction, which ITOL does not cover at all.",
+   "phase": 4,
+   "level": "intermediate",
+   "tracks": [
+    "mle",
+    "ds",
+    "res"
+   ]
+  },
+  {
+   "id": "p4hf1",
+   "name": "Hugging Face Community Computer Vision Course",
+   "platform": "hf",
+   "topic": "cv",
+   "cost": "free",
+   "hours": "multi-unit",
+   "core": false,
+   "cert": false,
+   "url": "https://huggingface.co/learn",
+   "why": "Free. Computer vision with models and libraries from the HF ecosystem. Pairs directly with your AI and Machine Vision core module and gives you a practical counterpart to the theory.",
+   "phase": 4,
+   "level": "intermediate",
+   "tracks": [
+    "res",
+    "mle"
+   ]
+  },
+  {
+   "id": "p4f",
+   "name": "Kaggle Learn: Computer Vision",
+   "platform": "gg",
+   "topic": "cv",
+   "cost": "free",
+   "hours": "~5 hrs",
+   "core": false,
+   "cert": false,
+   "url": "https://www.kaggle.com/learn",
+   "why": "Free. A shorter second pass at the same ground.",
+   "phase": 4,
+   "level": "intermediate",
+   "tracks": [
+    "res",
+    "mle"
+   ]
+  },
+  {
+   "id": "p4dl1",
+   "name": "Natural Language Processing Specialization (4 courses)",
+   "platform": "dl",
+   "topic": "ml",
+   "cost": "sub",
+   "hours": "~112 hrs",
+   "core": false,
+   "cert": true,
+   "url": "https://www.deeplearning.ai/courses/",
+   "why": "Deep NLP foundations. Largely superseded by the Hugging Face LLM Course for job purposes. Take it only if you want the theory underneath transformers.",
+   "phase": 4,
+   "level": "intermediate",
+   "tracks": [
+    "mle",
+    "ds",
+    "res"
+   ]
+  },
+  {
+   "id": "p4e",
+   "name": "Machine Learning Specialization (3 courses)",
+   "platform": "dl",
+   "topic": "ml",
+   "cost": "sub",
+   "hours": "~95 hrs",
+   "core": false,
+   "cert": true,
+   "url": "https://www.deeplearning.ai/courses/",
+   "why": "Stanford Online and DeepLearning.AI. Only if your MSc leaves gaps. Ninety-five hours is a real commitment against a dissertation.",
+   "phase": 4,
+   "level": "intermediate",
+   "tracks": [
+    "mle",
+    "ds",
+    "res"
+   ]
+  },
+  {
+   "id": "p5or1",
+   "name": "OCI AI Foundations Associate (1Z0-1122-26)",
+   "platform": "or",
+   "topic": "ops",
+   "cost": "freecert",
+   "hours": "~10 hrs + exam",
+   "core": true,
+   "cert": true,
+   "url": "https://education.oracle.com/",
+   "why": "Start the credential phase here. Oracle's 2026 structure keeps every Foundations-level course and certification free, and that includes the proctored exam, the lessons, the skill checks and the practice tests. A real, proctored, resume-grade AI certification for nothing, valid 24 months. AI, ML, deep learning and generative AI with OCI examples, no coding required.",
+   "phase": 5,
+   "level": "intermediate",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "p5or2",
+   "name": "Oracle Agentic AI Foundations Associate (1Z0-1157-26)",
+   "platform": "or",
+   "topic": "ops",
+   "cost": "freecert",
+   "hours": "~10 hrs + exam",
+   "core": true,
+   "cert": true,
+   "url": "https://education.oracle.com/",
+   "why": "The other genuinely free proctored AI certification: how AI agents work and how agent-based applications are built. Take it straight after the one above. Two free proctored certifications beats one paid foundational AWS exam on both cost and signal.",
+   "phase": 5,
+   "level": "intermediate",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "p5or3",
+   "name": "OCI Foundations Associate",
+   "platform": "or",
+   "topic": "ops",
+   "cost": "freecert",
+   "hours": "~10 hrs + exam",
+   "core": false,
+   "cert": true,
+   "url": "https://education.oracle.com/",
+   "why": "Free, exam included. Cloud fundamentals. Only worth it if you want a second cloud alongside AWS on the CV.",
+   "phase": 5,
+   "level": "intermediate",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "p5or4",
+   "name": "OCI Generative AI Professional",
+   "platform": "or",
+   "topic": "ops",
+   "cost": "paid",
+   "hours": "~20 hrs",
+   "core": false,
+   "cert": true,
+   "url": "https://education.oracle.com/",
+   "why": "Fine-tuning, integrating and deploying LLMs on OCI, plus vector search. Professional-level OCI courses moved to paid access under Oracle's 2026 structure, so confirm the current price before starting. Promotional free windows have run before and may run again.",
+   "phase": 5,
+   "level": "advanced",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "p5aws0",
+   "name": "AWS Skill Builder free tier (hub, not a course)",
+   "platform": "aws",
+   "topic": "ops",
+   "cost": "free",
+   "hours": "reference",
+   "core": true,
+   "cert": false,
+   "url": "https://aws.amazon.com/training/",
+   "why": "Set this up before anything else AWS. Over 1,000 free self-paced resources, hundreds of digital courses, and crucially a free Standard Exam Prep Plan plus a free Official Practice Question Set for every certification. No AWS account needed. Nobody should pay for third-party AWS exam prep before using this.",
+   "phase": 5,
+   "level": "intermediate",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "p5aws1",
+   "name": "AWS Educate",
+   "platform": "aws",
+   "topic": "ops",
+   "cost": "free",
+   "hours": "reference",
+   "core": false,
+   "cert": true,
+   "url": "https://aws.amazon.com/education/awseducate/",
+   "why": "Free training content, hands-on labs, skill badges and a job board, plus a curated pathway towards the AI Practitioner certification. Separate from Skill Builder. Promotions have periodically offered free exam vouchers for Foundational and Associate certifications, so check what is running before you pay for an exam.",
+   "phase": 5,
+   "level": "intermediate",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "p5aws2",
+   "name": "AWS Artificial Intelligence Practitioner Learning Plan",
+   "platform": "aws",
+   "topic": "ops",
+   "cost": "free",
+   "hours": "multi-course",
+   "core": true,
+   "cert": false,
+   "url": "https://aws.amazon.com/training/",
+   "why": "Free multi-course plan on Skill Builder, the official prep for the AI Practitioner exam. Use this rather than the Coursera third-party prep if you want the AWS-authored version.",
+   "phase": 5,
+   "level": "intermediate",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "p5aws3",
+   "name": "AWS Certified AI Practitioner (AIF-C01)",
+   "platform": "aws",
+   "topic": "ops",
+   "cost": "fee",
+   "hours": "exam",
+   "core": true,
+   "cert": true,
+   "url": "https://aws.amazon.com/certification/",
+   "why": "The AWS credential actually worth having for an AI Engineer CV, and a better use of an exam fee than Cloud Practitioner. Foundation models, prompt engineering, RAG and vector databases, responsible AI.",
+   "phase": 5,
+   "level": "intermediate",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "p5aws4",
+   "name": "AWS Certified Machine Learning Engineer Associate (MLA-C02)",
+   "platform": "aws",
+   "topic": "ops",
+   "cost": "fee",
+   "hours": "exam",
+   "core": true,
+   "cert": true,
+   "url": "https://aws.amazon.com/certification/",
+   "why": "Taking machine learning from research into production. The strongest AWS AI credential below Professional level, and the natural follow-on to AI Practitioner. Note the exam code: MLA-C01 was retired in English on 28 September 2026, and the Machine Learning Specialty retired entirely on 31 March 2026.",
+   "phase": 5,
+   "level": "intermediate",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "p5aws5",
+   "name": "AWS Cloud Quest: Generative AI Practitioner",
+   "platform": "aws",
+   "topic": "ops",
+   "cost": "free",
+   "hours": "game-based",
+   "core": false,
+   "cert": false,
+   "url": "https://aws.amazon.com/training/",
+   "why": "Free game-based version on Skill Builder. Low-effort reinforcement between the heavier items, not a substitute for them.",
+   "phase": 5,
+   "level": "intermediate",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "p5ms0",
+   "name": "Microsoft Learn paths + Applied Skills credentials",
+   "platform": "ms",
+   "topic": "ops",
+   "cost": "freecert",
+   "hours": "5 to 15 hrs each",
+   "core": true,
+   "cert": true,
+   "url": "https://learn.microsoft.com/",
+   "why": "Everything on Microsoft Learn is free: learning paths, modules and interactive sandboxes. Applied Skills are free lab-based assessments that award a shareable credential with no expiry. Free, hands-on, assessed proof of a specific skill beats a free video certificate every time.",
+   "phase": 5,
+   "level": "intermediate",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "p5ms1",
+   "name": "AI-901: Azure AI Fundamentals",
+   "platform": "ms",
+   "topic": "ops",
+   "cost": "fee",
+   "hours": "~15 hrs + exam",
+   "core": false,
+   "cert": true,
+   "url": "https://learn.microsoft.com/credentials/",
+   "why": "Around USD 99, and Microsoft Virtual Training Day vouchers routinely cover it. This is the current exam: AI-900 retired on 30 June 2026 and AI-901 now earns the Azure AI Fundamentals certification. Skip straight past it if you are going for AI-103.",
+   "phase": 5,
+   "level": "beginner",
+   "tracks": [
+    "ops",
+    "mle",
+    "new"
+   ]
+  },
+  {
+   "id": "p5ms2",
+   "name": "AI-103: Azure AI Apps and Agents Developer Associate",
+   "platform": "ms",
+   "topic": "ops",
+   "cost": "fee",
+   "hours": "exam",
+   "core": true,
+   "cert": true,
+   "url": "https://learn.microsoft.com/credentials/",
+   "why": "Around USD 165. The current Microsoft associate certification for AI engineers building generative AI apps and agents, replacing the retired AI-102. Role-based certifications are valid one year and renew free through a short online assessment. Free practice assessments are on AI Skills Navigator.",
+   "phase": 5,
+   "level": "intermediate",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "p5ms3",
+   "name": "AI-300: Machine Learning Operations Engineer Associate",
+   "platform": "ms",
+   "topic": "ops",
+   "cost": "fee",
+   "hours": "exam",
+   "core": false,
+   "cert": true,
+   "url": "https://learn.microsoft.com/credentials/",
+   "why": "Around USD 165. The MLOps credential that replaced the retired DP-100 Azure Data Scientist Associate. Take it only if you end up on the Azure side rather than AWS; do not collect both.",
+   "phase": 5,
+   "level": "intermediate",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "p5a",
+   "name": "AWS Certified Cloud Practitioner, booked direct with AWS",
+   "platform": "cs",
+   "topic": "ops",
+   "cost": "fee",
+   "hours": "exam",
+   "core": true,
+   "cert": true,
+   "url": "https://aws.amazon.com/certification/",
+   "why": "ITOL bundles this as the programme's final assessment. Sit it yourself: same certificate, same awarding body, exam fee only. Confirm the current price on the AWS certification site before booking.",
+   "phase": 5,
+   "level": "intermediate",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "p5b",
+   "name": "AWS Certified AI Practitioner prep",
+   "platform": "cs",
+   "topic": "ops",
+   "cost": "audit",
+   "hours": "~6 hrs",
+   "core": true,
+   "cert": true,
+   "url": "https://www.coursera.org/learn/aws-certified-ai-practitioner",
+   "why": "A better credential than Cloud Practitioner for an AI Engineer CV. Foundation models, RAG, vector databases on AWS and responsible AI. Do this instead of, or straight after, Cloud Practitioner.",
+   "phase": 5,
+   "level": "intermediate",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "p5c",
+   "name": "Machine Learning Engineer (12-course track)",
+   "platform": "dc",
+   "topic": "ops",
+   "cost": "sub",
+   "hours": "44 hrs",
+   "core": true,
+   "cert": true,
+   "url": "https://www.datacamp.com/tracks/career",
+   "why": "MLOps end to end. ITOL's curriculum stops at a Streamlit app; this is the deployment, monitoring and pipeline layer that appears in the higher-paying specs.",
+   "phase": 5,
+   "level": "intermediate",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "p5d",
+   "name": "Advanced: Generative AI for Developers (learning path)",
+   "platform": "gg",
+   "topic": "ops",
+   "cost": "sub",
+   "hours": "12 activities",
+   "core": false,
+   "cert": true,
+   "url": "https://www.skills.google/paths/183",
+   "why": "Google Cloud. Built for app developers and ML engineers; includes MLOps for Generative AI and diffusion models. Partially free, advanced labs consume Google Cloud credits.",
+   "phase": 5,
+   "level": "advanced",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "p5e",
+   "name": "Introduction to AI and Machine Learning on Google Cloud",
+   "platform": "gg",
+   "topic": "ops",
+   "cost": "sub",
+   "hours": "course",
+   "core": false,
+   "cert": false,
+   "url": "https://cloud.google.com/learn/training/machinelearning-ai",
+   "why": "Vertex AI, BigQuery and TensorFlow in a managed-cloud context. Useful second cloud after AWS.",
+   "phase": 5,
+   "level": "beginner",
+   "tracks": [
+    "ops",
+    "mle",
+    "new"
+   ]
+  },
+  {
+   "id": "p5f",
+   "name": "Understanding Cloud Computing + AWS Concepts",
+   "platform": "dc",
+   "topic": "ops",
+   "cost": "sub",
+   "hours": "4 hrs",
+   "core": false,
+   "cert": false,
+   "url": "https://www.datacamp.com/tracks/career",
+   "why": "Two short courses. Cheap warm-up before the AWS exam if cloud is your weakest area.",
+   "phase": 5,
+   "level": "intermediate",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "p6dl1",
+   "name": "Governing AI Agents",
+   "platform": "dl",
+   "topic": "eth",
+   "cost": "beta",
+   "hours": "~1 hr",
+   "core": false,
+   "cert": false,
+   "url": "https://www.deeplearning.ai/courses/?types=short_course",
+   "why": "Guardrails, permissions and oversight for agent systems. More useful than generic AI ethics because it is the version an employer will ask you to implement.",
+   "phase": 6,
+   "level": "intermediate",
+   "tracks": [
+    "res",
+    "new"
+   ]
+  },
+  {
+   "id": "p6a",
+   "name": "Kaggle Learn: Intro to AI Ethics",
+   "platform": "gg",
+   "topic": "eth",
+   "cost": "free",
+   "hours": "~4 hrs",
+   "core": false,
+   "cert": false,
+   "url": "https://www.kaggle.com/learn",
+   "why": "Free. Practical tools for the moral design of AI systems. Replaces ITOL's short ethics course at zero cost.",
+   "phase": 6,
+   "level": "beginner",
+   "tracks": [
+    "res",
+    "new"
+   ]
+  },
+  {
+   "id": "p6b",
+   "name": "AI Ethics",
+   "platform": "dc",
+   "topic": "eth",
+   "cost": "sub",
+   "hours": "2 hrs",
+   "core": false,
+   "cert": false,
+   "url": "https://www.datacamp.com/tracks/ai-fundamentals",
+   "why": "Inside the AI Fundamentals track. Principles, fairness, bias reduction and trust in AI design.",
+   "phase": 6,
+   "level": "intermediate",
+   "tracks": [
+    "res",
+    "new"
+   ]
+  },
+  {
+   "id": "p6c",
+   "name": "Introduction to Responsible AI",
+   "platform": "gg",
+   "topic": "eth",
+   "cost": "free",
+   "hours": "~1 hr",
+   "core": false,
+   "cert": true,
+   "url": "https://cloud.google.com/learn/training/machinelearning-ai",
+   "why": "Free Google course and a prerequisite for their advanced generative AI path. Quick badge.",
+   "phase": 6,
+   "level": "beginner",
+   "tracks": [
+    "res",
+    "new"
+   ]
+  },
+  {
+   "id": "p7a",
+   "name": "Ship a RAG system over your own product documentation",
+   "platform": "cs",
+   "topic": "port",
+   "cost": "free",
+   "hours": "build",
+   "core": true,
+   "cert": false,
+   "url": "https://www.coursera.org/learn/project-generative-ai-applications-with-rag-and-langchain",
+   "why": "ITOL's chatbot project is a toy. Point a real RAG pipeline at a real knowledge base from one of your own products, with retrieval evaluation numbers you can quote in an interview.",
+   "phase": 7,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p7e",
+   "name": "Complete the Hugging Face Agents Course final assignment",
+   "platform": "hf",
+   "topic": "port",
+   "cost": "free",
+   "hours": "build",
+   "core": true,
+   "cert": true,
+   "url": "https://huggingface.co/agents-course",
+   "why": "Build an agent for the GAIA benchmark and put it on the public leaderboard. A scored, independently verifiable result beats any certificate of attendance.",
+   "phase": 7,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p7b",
+   "name": "Publish one fine-tuned model with an evaluation write-up",
+   "platform": "hf",
+   "topic": "port",
+   "cost": "free",
+   "hours": "build",
+   "core": true,
+   "cert": false,
+   "url": "https://huggingface.co/learn",
+   "why": "Push it to the Hub with a model card: baseline against fine-tuned, metrics, failure cases, error analysis. A public model card is the single most legible artefact in AI hiring.",
+   "phase": 7,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p7f",
+   "name": "Open-Source AI Cookbook",
+   "platform": "hf",
+   "topic": "port",
+   "cost": "free",
+   "hours": "reference",
+   "core": false,
+   "cert": false,
+   "url": "https://huggingface.co/learn",
+   "why": "Free. Practical notebooks by AI builders covering real implementations. Use it as the reference you work from while building, not as a course to finish.",
+   "phase": 7,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p7c",
+   "name": "Deploy one model to production with monitoring",
+   "platform": "dc",
+   "topic": "port",
+   "cost": "free",
+   "hours": "build",
+   "core": true,
+   "cert": false,
+   "url": "https://www.datacamp.com/tracks/career",
+   "why": "An endpoint, a latency and cost budget, logging and a rollback path. The most convincing thing on a junior AI Engineer CV.",
+   "phase": 7,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p7d",
+   "name": "Write all of it up properly on GitHub",
+   "platform": "gg",
+   "topic": "port",
+   "cost": "free",
+   "hours": "build",
+   "core": true,
+   "cert": false,
+   "url": "https://github.com/",
+   "why": "Architecture diagram, decisions and trade-offs, what you measured, what broke. Hiring managers read the README, not the certificate list.",
+   "phase": 7,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p7lc",
+   "name": "LangChain Certified Agent Engineer exam",
+   "platform": "lc",
+   "topic": "port",
+   "cost": "paid",
+   "hours": "exam",
+   "core": false,
+   "cert": true,
+   "url": "https://academy.langchain.com/",
+   "why": "LangChain Academy's course content is always free; this exam is their only paid product. Worth it only once the Phase 2 LangGraph projects are built and on your GitHub, because the certification is weak without them and redundant with them.",
+   "phase": 7,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "p7g",
+   "name": "Claude Code: A Highly Agentic Coding Assistant",
+   "platform": "dl",
+   "topic": "port",
+   "cost": "beta",
+   "hours": "~1 hr",
+   "core": false,
+   "cert": false,
+   "url": "https://www.deeplearning.ai/courses/?types=short_course",
+   "why": "Tooling rather than theory. Worth an hour because the speed you build the portfolio above at is itself a hiring signal.",
+   "phase": 7,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "n01",
+   "name": "Generative AI Explained",
+   "platform": "nv",
+   "topic": "llm",
+   "cost": "free",
+   "hours": "2 hrs",
+   "core": false,
+   "cert": false,
+   "url": "https://www.nvidia.com/en-us/training/",
+   "why": "Free, no code required. Concepts, mechanisms and use cases of generative AI from the company whose GPUs run almost all of it. The cleanest non-technical on-ramp of any vendor.",
+   "phase": 0,
+   "level": "beginner",
+   "tracks": [
+    "aie",
+    "prod",
+    "new"
+   ]
+  },
+  {
+   "id": "n02",
+   "name": "Agentic AI Explained",
+   "platform": "nv",
+   "topic": "agt",
+   "cost": "free",
+   "hours": "1 hr",
+   "core": false,
+   "cert": false,
+   "url": "https://www.nvidia.com/en-us/training/",
+   "why": "Free, one hour, no code. What agentic AI actually is, before you spend money learning to build it.",
+   "phase": 0,
+   "level": "beginner",
+   "tracks": [
+    "aie",
+    "prod",
+    "new"
+   ]
+  },
+  {
+   "id": "n03",
+   "name": "Building LLM Applications With Prompt Engineering",
+   "platform": "nv",
+   "topic": "llm",
+   "cost": "paid",
+   "hours": "$30 to $90",
+   "core": true,
+   "cert": true,
+   "url": "https://www.nvidia.com/en-us/training/",
+   "why": "Paid self-paced DLI course and the recommended starting point for the NCA-GENL certification. Carries a certificate because it has an assessment, unlike the free DLI courses.",
+   "phase": 0,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "n04",
+   "name": "Augment LLMs Using Retrieval Augmented Generation",
+   "platform": "nv",
+   "topic": "rag",
+   "cost": "paid",
+   "hours": "$30 to $90",
+   "core": true,
+   "cert": true,
+   "url": "https://www.nvidia.com/en-us/training/",
+   "why": "NVIDIA's own RAG course, pitched at exactly the depth the NCA-GENL exam tests. Pair with the DeepLearning.AI RAG course for the vendor-neutral view.",
+   "phase": 0,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "n05",
+   "name": "Building Agentic AI Applications with LLMs",
+   "platform": "nv",
+   "topic": "agt",
+   "cost": "paid",
+   "hours": "8 hrs, $90",
+   "core": true,
+   "cert": true,
+   "url": "https://www.nvidia.com/en-us/training/",
+   "why": "Eight hours, $90, with a certificate. NVIDIA's deepest self-paced agent course and a credible line on a CV because it is assessed.",
+   "phase": 0,
+   "level": "advanced",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "n06",
+   "name": "Securing Agents with NemoClaw and OpenShell",
+   "platform": "nv",
+   "topic": "agt",
+   "cost": "free",
+   "hours": "4 hrs",
+   "core": false,
+   "cert": false,
+   "url": "https://www.nvidia.com/en-us/training/",
+   "why": "Free and four hours. Agent security is barely taught anywhere and increasingly asked about in interviews.",
+   "phase": 0,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "n07",
+   "name": "Fundamentals of Accelerated Computing with CUDA",
+   "platform": "nv",
+   "topic": "sys",
+   "cost": "paid",
+   "hours": "$30 to $90",
+   "core": false,
+   "cert": true,
+   "url": "https://www.nvidia.com/en-us/training/",
+   "why": "CUDA C++ and Python with Numba. The layer underneath every deep learning framework. Rare and valuable if you want infrastructure roles rather than app roles.",
+   "phase": 0,
+   "level": "advanced",
+   "tracks": [
+    "sys",
+    "ops"
+   ]
+  },
+  {
+   "id": "n08",
+   "name": "NCA-GENL: Generative AI LLMs certification",
+   "platform": "nv",
+   "topic": "ops",
+   "cost": "fee",
+   "hours": "1 hr exam",
+   "core": true,
+   "cert": true,
+   "url": "https://www.nvidia.com/en-us/learn/certification/",
+   "why": "$125, around 50 to 60 questions, digital badge valid two years. Covers LLM fundamentals, transformer architecture, RAG, prompt engineering, fine-tuning and deployment. The common entry point for an NVIDIA credential and a strong differentiator because few candidates hold it.",
+   "phase": 0,
+   "level": "intermediate",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "n09",
+   "name": "NCA-GENM: Generative AI Multimodal certification",
+   "platform": "nv",
+   "topic": "ops",
+   "cost": "fee",
+   "hours": "1 hr exam",
+   "core": false,
+   "cert": true,
+   "url": "https://www.nvidia.com/en-us/learn/certification/",
+   "why": "$125. Designing and managing systems that handle text, image and audio together. Take it instead of NCA-GENL only if multimodal is your direction.",
+   "phase": 0,
+   "level": "intermediate",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "n10",
+   "name": "OpenAI Academy",
+   "platform": "oa",
+   "topic": "llm",
+   "cost": "free",
+   "hours": "self-paced",
+   "core": true,
+   "cert": false,
+   "url": "https://academy.openai.com/",
+   "why": "Free. OpenAI's own learning platform with workshops, sessions and community learning, including prompt engineering taught by the people who build the models. Free and first-party, so it belongs in any LLM path regardless of which vendor you end up using.",
+   "phase": 0,
+   "level": "beginner",
+   "tracks": [
+    "aie",
+    "prod",
+    "new"
+   ]
+  },
+  {
+   "id": "n11",
+   "name": "OpenAI Cookbook",
+   "platform": "oa",
+   "topic": "port",
+   "cost": "free",
+   "hours": "reference",
+   "core": true,
+   "cert": false,
+   "url": "https://cookbook.openai.com/",
+   "why": "Free. Runnable recipes for structured outputs, function calling, evals, embeddings and RAG. Treat it as the reference you build from, not a course to finish.",
+   "phase": 0,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "n12",
+   "name": "Claude 101",
+   "platform": "an",
+   "topic": "llm",
+   "cost": "free",
+   "hours": "2.5 hrs, 13 lessons",
+   "core": false,
+   "cert": true,
+   "url": "https://anthropic.skilljar.com/",
+   "why": "Free with a completion certificate and no Claude subscription needed. The entry point: what Claude is, how to prompt it well and how to use it responsibly. Non-technical.",
+   "phase": 0,
+   "level": "beginner",
+   "tracks": [
+    "aie",
+    "prod",
+    "new"
+   ]
+  },
+  {
+   "id": "n13",
+   "name": "Building with the Claude API",
+   "platform": "an",
+   "topic": "llm",
+   "cost": "free",
+   "hours": "self-paced",
+   "core": true,
+   "cert": true,
+   "url": "https://anthropic.skilljar.com/",
+   "why": "Free with a certificate. The definitive first-party course for building products on Claude. Direct counterpart to the OpenAI API courses, and worth doing both so you are not locked to one vendor.",
+   "phase": 0,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "n14",
+   "name": "Introduction to Model Context Protocol",
+   "platform": "an",
+   "topic": "agt",
+   "cost": "free",
+   "hours": "self-paced",
+   "core": true,
+   "cert": true,
+   "url": "https://anthropic.skilljar.com/",
+   "why": "Free with a certificate. MCP is how agents connect to tools and data, and it now appears in job specs. First-party and free, which makes paid MCP courses hard to justify.",
+   "phase": 0,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "n15",
+   "name": "Model Context Protocol: In Depth",
+   "platform": "an",
+   "topic": "agt",
+   "cost": "free",
+   "hours": "self-paced",
+   "core": true,
+   "cert": true,
+   "url": "https://anthropic.skilljar.com/",
+   "why": "Free. Build MCP servers and clients in TypeScript from scratch. The deep version, and genuinely rare material.",
+   "phase": 0,
+   "level": "advanced",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "n16",
+   "name": "Introduction to Agent Skills",
+   "platform": "an",
+   "topic": "agt",
+   "cost": "free",
+   "hours": "self-paced",
+   "core": true,
+   "cert": true,
+   "url": "https://anthropic.skilljar.com/",
+   "why": "Free with a certificate. Packaging reusable capabilities for agents, which is where agent engineering is heading.",
+   "phase": 0,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "n17",
+   "name": "Introduction to Subagents",
+   "platform": "an",
+   "topic": "agt",
+   "cost": "free",
+   "hours": "self-paced",
+   "core": false,
+   "cert": true,
+   "url": "https://anthropic.skilljar.com/",
+   "why": "Free. Orchestrating multiple agents. Pairs with the crewAI and AutoGen short courses for a framework-independent view.",
+   "phase": 0,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "n18",
+   "name": "Claude Code 101 and Claude Code in Action",
+   "platform": "an",
+   "topic": "port",
+   "cost": "free",
+   "hours": "self-paced",
+   "core": false,
+   "cert": true,
+   "url": "https://anthropic.skilljar.com/",
+   "why": "Free, two courses, both with certificates. AI-assisted coding, terminal workflows and debugging. Tooling rather than theory, but the speed you build your portfolio at is itself a hiring signal.",
+   "phase": 0,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "prod"
+   ]
+  },
+  {
+   "id": "n19",
+   "name": "AI Fluency: Framework and Foundations",
+   "platform": "an",
+   "topic": "eth",
+   "cost": "free",
+   "hours": "self-paced",
+   "core": false,
+   "cert": true,
+   "url": "https://anthropic.skilljar.com/",
+   "why": "Free with a certificate. How to think and communicate with AI systems. There is also an AI Fluency for Students version. Useful if you teach, mentor or write about AI.",
+   "phase": 0,
+   "level": "beginner",
+   "tracks": [
+    "res",
+    "new"
+   ]
+  },
+  {
+   "id": "n20",
+   "name": "Claude with Amazon Bedrock and Google Vertex AI",
+   "platform": "an",
+   "topic": "ops",
+   "cost": "free",
+   "hours": "self-paced",
+   "core": false,
+   "cert": true,
+   "url": "https://anthropic.skilljar.com/",
+   "why": "Free, two courses. Running Claude inside AWS and Google Cloud. Directly relevant if you are also taking the AWS or Google credentials in this list.",
+   "phase": 0,
+   "level": "advanced",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "n21",
+   "name": "The Rust Programming Language (the Book)",
+   "platform": "rs",
+   "topic": "sys",
+   "cost": "free",
+   "hours": "15 modules",
+   "core": true,
+   "cert": false,
+   "url": "https://doc.rust-lang.org/book/",
+   "why": "Free and official. The authoritative introduction, maintained by the Rust team. Best free introduction to Rust that exists, though not enough on its own to get hired in Rust: it is light on async, architecture and production patterns.",
+   "phase": 0,
+   "level": "beginner",
+   "tracks": [
+    "sys",
+    "ops",
+    "new"
+   ]
+  },
+  {
+   "id": "n22",
+   "name": "Rustlings",
+   "platform": "rs",
+   "topic": "sys",
+   "cost": "free",
+   "hours": "94 exercises",
+   "core": true,
+   "cert": false,
+   "url": "https://github.com/rust-lang/rustlings",
+   "why": "Free and official. Fix 94 broken programs in your terminal, chapter by chapter alongside the Book. The developers who credit the Book for their success almost universally did Rustlings with it. Do not read the Book without this.",
+   "phase": 0,
+   "level": "beginner",
+   "tracks": [
+    "sys",
+    "ops",
+    "new"
+   ]
+  },
+  {
+   "id": "n23",
+   "name": "Brown University interactive Rust Book",
+   "platform": "rs",
+   "topic": "sys",
+   "cost": "free",
+   "hours": "same as the Book",
+   "core": false,
+   "cert": false,
+   "url": "https://rust-book.cs.brown.edu/",
+   "why": "Free. The official text plus inline quizzes and ownership visualisations that show what the borrow checker sees. The best version for the ownership and lifetimes chapters.",
+   "phase": 0,
+   "level": "beginner",
+   "tracks": [
+    "sys",
+    "ops",
+    "new"
+   ]
+  },
+  {
+   "id": "n24",
+   "name": "Comprehensive Rust (Google)",
+   "platform": "rs",
+   "topic": "sys",
+   "cost": "free",
+   "hours": "multi-day",
+   "core": false,
+   "cert": false,
+   "url": "https://google.github.io/comprehensive-rust/",
+   "why": "Free. Google's own multi-day Rust course, used to train their engineers. Faster and denser than the Book if you already know another systems language.",
+   "phase": 0,
+   "level": "intermediate",
+   "tracks": [
+    "sys",
+    "ops"
+   ]
+  },
+  {
+   "id": "n25",
+   "name": "Rust by Example",
+   "platform": "rs",
+   "topic": "sys",
+   "cost": "free",
+   "hours": "reference",
+   "core": false,
+   "cert": false,
+   "url": "https://doc.rust-lang.org/rust-by-example/",
+   "why": "Free and official. Runnable snippets for quick syntax lookups beside the Book.",
+   "phase": 0,
+   "level": "beginner",
+   "tracks": [
+    "sys",
+    "ops",
+    "new"
+   ]
+  },
+  {
+   "id": "n26",
+   "name": "Candle and Burn: Rust for AI inference",
+   "platform": "rs",
+   "topic": "sys",
+   "cost": "free",
+   "hours": "self-directed",
+   "core": false,
+   "cert": false,
+   "url": "https://github.com/huggingface/candle",
+   "why": "Free, via the project docs. Candle is Hugging Face's Rust framework built for inference rather than training, with WebAssembly support for in-browser AI and small binaries for edge deployment. Burn covers training and inference. Be realistic: the AI ecosystem is Python and C, and Rust's ML frameworks are still nascent. Learn this for inference engines, edge AI and infrastructure, not to replace Python.",
+   "phase": 0,
+   "level": "advanced",
+   "tracks": [
+    "sys",
+    "ops"
+   ]
+  },
+  {
+   "id": "n27",
+   "name": "React: official Learn tutorial",
+   "platform": "rc",
+   "topic": "web",
+   "cost": "free",
+   "hours": "self-paced",
+   "core": true,
+   "cert": false,
+   "url": "https://react.dev/learn",
+   "why": "Free and official. Components, state, hooks and effects, with an interactive tic-tac-toe build. You need a front end to make any AI project demoable, and a bare Streamlit app no longer impresses anyone.",
+   "phase": 0,
+   "level": "beginner",
+   "tracks": [
+    "prod",
+    "new"
+   ]
+  },
+  {
+   "id": "n28",
+   "name": "Next.js Learn course",
+   "platform": "rc",
+   "topic": "web",
+   "cost": "free",
+   "hours": "self-paced",
+   "core": true,
+   "cert": false,
+   "url": "https://nextjs.org/learn",
+   "why": "Free and official. The React framework most AI products ship on, with routing, server rendering and data fetching. Deploys to Vercel in one step, which is how most AI side projects reach the web.",
+   "phase": 0,
+   "level": "intermediate",
+   "tracks": [
+    "prod"
+   ]
+  },
+  {
+   "id": "n29",
+   "name": "Build a chat UI with streaming responses",
+   "platform": "rc",
+   "topic": "web",
+   "cost": "free",
+   "hours": "build",
+   "core": true,
+   "cert": false,
+   "url": "https://react.dev/learn",
+   "why": "A build task, not a course. Token streaming, loading states, error handling, conversation history and cost display. The gap between an AI demo and an AI product is almost entirely here.",
+   "phase": 0,
+   "level": "intermediate",
+   "tracks": [
+    "prod"
+   ]
+  },
+  {
+   "id": "n30",
+   "name": "Practical Deep Learning for Coders",
+   "platform": "ff",
+   "topic": "ml",
+   "cost": "free",
+   "hours": "~8 weeks",
+   "core": true,
+   "cert": false,
+   "url": "https://course.fast.ai/",
+   "why": "Free. The famous top-down course: you train and deploy a working model in lesson one, then learn the theory underneath. If the maths-first courses have ever put you off deep learning, start here instead.",
+   "phase": 0,
+   "level": "intermediate",
+   "tracks": [
+    "mle",
+    "ds",
+    "res"
+   ]
+  },
+  {
+   "id": "n31",
+   "name": "From Deep Learning Foundations to Stable Diffusion",
+   "platform": "ff",
+   "topic": "ml",
+   "cost": "free",
+   "hours": "~10 weeks",
+   "core": false,
+   "cert": false,
+   "url": "https://course.fast.ai/Lessons/part2.html",
+   "why": "Free. Part two, building diffusion models from scratch. Serious depth, and a strong answer to 'can you implement it, not just call it'.",
+   "phase": 0,
+   "level": "advanced",
+   "tracks": [
+    "mle",
+    "ds",
+    "res"
+   ]
+  },
+  {
+   "id": "n32",
+   "name": "Machine Learning with Python certification",
+   "platform": "fc",
+   "topic": "ml",
+   "cost": "free",
+   "hours": "~300 hrs",
+   "core": false,
+   "cert": true,
+   "url": "https://www.freecodecamp.org/learn/machine-learning-with-python/",
+   "why": "Free, including the certification. TensorFlow, neural networks and five required projects. The project requirement is the point: a certificate nobody can get without shipping code.",
+   "phase": 0,
+   "level": "intermediate",
+   "tracks": [
+    "mle",
+    "ds",
+    "res"
+   ]
+  },
+  {
+   "id": "n33",
+   "name": "Data Analysis with Python certification",
+   "platform": "fc",
+   "topic": "py",
+   "cost": "free",
+   "hours": "~300 hrs",
+   "core": false,
+   "cert": true,
+   "url": "https://www.freecodecamp.org/learn/data-analysis-with-python/",
+   "why": "Free, including the certification. NumPy, Pandas and Matplotlib with five projects. A genuine free alternative to the paid DataCamp data courses.",
+   "phase": 0,
+   "level": "beginner",
+   "tracks": [
+    "new",
+    "ds"
+   ]
+  },
+  {
+   "id": "n34",
+   "name": "Elements of AI (University of Helsinki)",
+   "platform": "un",
+   "topic": "eth",
+   "cost": "free",
+   "hours": "~30 hrs",
+   "core": false,
+   "cert": true,
+   "url": "https://www.elementsofai.com/",
+   "why": "Free with a certificate, translated into dozens of languages, and built as a public good rather than a funnel. The best non-technical AI course in the world and the right first step for anyone outside computer science.",
+   "phase": 0,
+   "level": "beginner",
+   "tracks": [
+    "res",
+    "new"
+   ]
+  },
+  {
+   "id": "n35",
+   "name": "MIT 6.S191: Introduction to Deep Learning",
+   "platform": "un",
+   "topic": "ml",
+   "cost": "free",
+   "hours": "~1 week",
+   "core": true,
+   "cert": false,
+   "url": "http://introtodeeplearning.com/",
+   "why": "Free. MIT's intensive deep learning bootcamp, refreshed every year with current material and released publicly with labs. One of the few free courses that keeps pace with the field.",
+   "phase": 0,
+   "level": "intermediate",
+   "tracks": [
+    "mle",
+    "ds",
+    "res"
+   ]
+  },
+  {
+   "id": "n36",
+   "name": "Stanford CS224N: NLP with Deep Learning",
+   "platform": "un",
+   "topic": "ml",
+   "cost": "free",
+   "hours": "~10 weeks",
+   "core": false,
+   "cert": false,
+   "url": "https://web.stanford.edu/class/cs224n/",
+   "why": "Free lecture materials and assignments. The transformer theory underneath every LLM you use, taught properly. Heavy, and worth it only if you want research or deep model work.",
+   "phase": 0,
+   "level": "advanced",
+   "tracks": [
+    "mle",
+    "ds",
+    "res"
+   ]
+  },
+  {
+   "id": "n37",
+   "name": "Stanford CS229: Machine Learning",
+   "platform": "un",
+   "topic": "ml",
+   "cost": "free",
+   "hours": "~10 weeks",
+   "core": false,
+   "cert": false,
+   "url": "https://cs229.stanford.edu/",
+   "why": "Free notes and problem sets. The rigorous mathematical treatment. The Andrew Ng Coursera specialization is the gentler version of this same material.",
+   "phase": 0,
+   "level": "advanced",
+   "tracks": [
+    "mle",
+    "ds",
+    "res"
+   ]
+  },
+  {
+   "id": "n38",
+   "name": "Full Stack Deep Learning",
+   "platform": "un",
+   "topic": "ops",
+   "cost": "free",
+   "hours": "self-paced",
+   "core": true,
+   "cert": false,
+   "url": "https://fullstackdeeplearning.com/",
+   "why": "Free. The course about everything around the model: project setup, data management, testing, deployment, monitoring and team structure. Covers the gap most courses leave and most interviews probe.",
+   "phase": 0,
+   "level": "advanced",
+   "tracks": [
+    "ops",
+    "mle"
+   ]
+  },
+  {
+   "id": "n39",
+   "name": "Microsoft AI for Beginners (24 lessons)",
+   "platform": "un",
+   "topic": "ml",
+   "cost": "free",
+   "hours": "24 lessons",
+   "core": false,
+   "cert": false,
+   "url": "https://github.com/microsoft/AI-For-Beginners",
+   "why": "Free on GitHub. A full open curriculum with quizzes and notebooks. Good structure, zero cost, no sign-up, and you can fork it.",
+   "phase": 0,
+   "level": "beginner",
+   "tracks": [
+    "mle",
+    "ds",
+    "res",
+    "new"
+   ]
+  },
+  {
+   "id": "n40",
+   "name": "Weights & Biases free courses",
+   "platform": "un",
+   "topic": "eval",
+   "cost": "free",
+   "hours": "self-paced",
+   "core": false,
+   "cert": true,
+   "url": "https://wandb.ai/site/courses/",
+   "why": "Free with certificates. Experiment tracking, LLM evaluation, model CI/CD and MLOps from the team whose tool most ML teams actually use for this. Experiment tracking is assumed knowledge in ML roles and taught almost nowhere else.",
+   "phase": 0,
+   "level": "intermediate",
+   "tracks": [
+    "aie",
+    "mle",
+    "res"
+   ]
+  }
+ ]
+}
