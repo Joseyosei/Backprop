@@ -1,0 +1,617 @@
+{
+ "updated": "2026-11-12",
+ "note": "Module lists were read off each institution's own course pages where marked verified. Where verified is false, the programme exists and the subject coverage is an informed estimate rather than a checked module mapping, usually because the module list is not published in English. Universities revise modules every year: confirm against the institution's own pages before relying on an overlap.",
+ "programmes": [
+  {
+   "inst": "University College London",
+   "short": "UCL",
+   "country": "United Kingdom",
+   "city": "London",
+   "prog": "Artificial Intelligence and Data Engineering MSc",
+   "level": "MSc",
+   "length": "1 year",
+   "url": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/artificial-intelligence-and-data-engineering-msc",
+   "verified": true,
+   "core": [
+    "Engineering for Data Analysis 1 (COMP0235)",
+    "Engineering for Data Analysis 2 (COMP0239)",
+    "Requirements Engineering and Software Architecture",
+    "Software Development Practice",
+    "Validation and Verification",
+    "Professional Practice",
+    "Group Project",
+    "Research Project"
+   ],
+   "options": [
+    "Data Science (COMP0047)",
+    "Information Retrieval and Data Mining (COMP0084)",
+    "Supervised Learning",
+    "Introduction to Machine Learning",
+    "Applied Deep Learning"
+   ],
+   "covers": [
+    "ml",
+    "de",
+    "py"
+   ],
+   "note": "Built by merging modules from UCL's Software Systems Engineering MSc and its machine learning master's, plus new data engineering modules. Unusually strong on the engineering side, which is exactly the gap in most AI curricula."
+  },
+  {
+   "inst": "University College London",
+   "short": "UCL",
+   "country": "United Kingdom",
+   "city": "London",
+   "prog": "Artificial Intelligence for Sustainable Development MSc",
+   "level": "MSc",
+   "length": "1 year",
+   "url": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/artificial-intelligence-sustainable-development-msc",
+   "verified": true,
+   "core": [
+    "Artificial Intelligence for Sustainable Development (COMP0173)",
+    "Foundations of Artificial Intelligence (COMP0186)",
+    "Probabilistic Modelling (COMP0187)",
+    "Deep Representations and Learning (COMP0188)",
+    "Project (COMP0287)"
+   ],
+   "options": [
+    "Information Retrieval and Data Mining (COMP0084)",
+    "Statistical Natural Language Processing (COMP0087)",
+    "Reinforcement Learning (COMP0089)",
+    "Applied Artificial Intelligence (COMP0189)",
+    "Accountable, Transparent, and Responsible AI (COMP0195)",
+    "Generative Artificial Intelligence (COMP0264)"
+   ],
+   "covers": [
+    "ml",
+    "eth",
+    "rl"
+   ],
+   "note": "One of the few master's programmes with a named Generative AI module and a dedicated responsible AI module, so the ethics and genAI rows here are genuinely redundant for you."
+  },
+  {
+   "inst": "University College London",
+   "short": "UCL",
+   "country": "United Kingdom",
+   "city": "London",
+   "prog": "Data Science and Machine Learning MSc",
+   "level": "MSc",
+   "length": "1 year",
+   "url": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-and-machine-learning-msc",
+   "verified": true,
+   "core": [
+    "Modules spanning artificial intelligence, deep learning, digital finance and probabilistic modelling"
+   ],
+   "options": [],
+   "covers": [
+    "ml",
+    "math"
+   ],
+   "note": "Module list published by UCL is indicative rather than fixed, so treat the overlap as approximate. Graduate destinations listed by UCL include Amazon, Bloomberg, IBM and Morgan Stanley."
+  },
+  {
+   "inst": "King's College London",
+   "short": "KCL",
+   "country": "United Kingdom",
+   "city": "London",
+   "prog": "Artificial Intelligence MSc",
+   "level": "MSc",
+   "length": "1 year",
+   "url": "https://www.kcl.ac.uk/study/postgraduate-taught/courses/artificial-intelligence-msc",
+   "verified": true,
+   "core": [
+    "Individual Project (60 credits)"
+   ],
+   "options": [
+    "Machine Learning (30)",
+    "Pattern Recognition, Neural Networks & Deep Learning (15)",
+    "Agents & Multi-Agent Systems (15)",
+    "Agent Reasoning and Decision Making (15)",
+    "Artificial Intelligence Planning (15)",
+    "Computer Vision (15)",
+    "Data Mining (15)",
+    "Nature Inspired Learning Algorithms (15)",
+    "Optimization Methods (15)",
+    "Philosophy and Ethics of Artificial Intelligence (15)",
+    "Formal Verification (15)",
+    "Computational Models (15)",
+    "Human-Computer Interaction (15)",
+    "Distributed Ledgers & Crypto-currencies (15)"
+   ],
+   "covers": [
+    "ml",
+    "cv",
+    "eth",
+    "agt"
+   ],
+   "note": "Almost entirely optional modules around a single 60-credit project, so the overlap depends heavily on what you pick. Notably strong on agents and multi-agent systems, which is the one area most degrees ignore."
+  },
+  {
+   "inst": "King's College London",
+   "short": "KCL",
+   "country": "United Kingdom",
+   "city": "London",
+   "prog": "Artificial Intelligence for Science MSc",
+   "level": "MSc",
+   "length": "1 year",
+   "url": "https://www.kcl.ac.uk/study/postgraduate-taught/courses/artificial-intelligence-for-science-msc",
+   "verified": true,
+   "core": [
+    "Foundations of Artificial Intelligence (15)",
+    "Responsible Artificial Intelligence (15)",
+    "Machine Learning (15)",
+    "Programming in Action (15)",
+    "Science Application & Engagement at the Forefront of AI (30)",
+    "Dissertation (60)"
+   ],
+   "options": [
+    "Artificial Intelligence Entrepreneurship (15)",
+    "Artificial Intelligence, Law and Society (15)",
+    "Quantum Information, Computing and Algorithms (15)",
+    "Intelligence and Autonomy (15)",
+    "Applied Systems Thinking (15)",
+    "Advanced Topics in AI: AI and Robotics Engineering (15)"
+   ],
+   "covers": [
+    "ml",
+    "eth",
+    "py"
+   ],
+   "note": "Aimed at science and maths graduates rather than computer scientists. Carries a group project built on real case studies from industry, academia and government, and has an entrepreneurship option that most AI master's do not."
+  },
+  {
+   "inst": "University of Oxford",
+   "short": "Oxford",
+   "country": "United Kingdom",
+   "city": "Oxford",
+   "prog": "MSc in Advanced Computer Science (Artificial Intelligence)",
+   "level": "MSc",
+   "length": "12 months",
+   "url": "https://www.cs.ox.ac.uk/teaching/MSCinCS/",
+   "verified": true,
+   "core": [
+    "Minimum of 6 modules across two terms, plus a dissertation"
+   ],
+   "options": [
+    "Computational Learning Theory",
+    "Computer Vision",
+    "Geometric Deep Learning",
+    "Uncertainty in Deep Learning",
+    "Foundations of Self-Programming Agents",
+    "Knowledge Representation and Reasoning",
+    "Advanced Algorithmic Game Theory",
+    "Algorithmic Foundations of Collective Decision Making",
+    "Probabilistic Model Checking",
+    "Graph Representation Learning",
+    "Deep Learning in Healthcare",
+    "Quantum Software",
+    "Advanced Security"
+   ],
+   "covers": [
+    "ml",
+    "cv",
+    "math",
+    "qc"
+   ],
+   "note": "Theory first, with a strong mathematical foundation, and an AI specialisation you graduate with named on the degree. Deliberately not a practitioner course: nothing here teaches you to ship an LLM product, so the whole LLM and agents side of this list stays relevant."
+  },
+  {
+   "inst": "University of Cambridge",
+   "short": "Cambridge",
+   "country": "United Kingdom",
+   "city": "Cambridge",
+   "prog": "MPhil in Machine Learning and Machine Intelligence",
+   "level": "MPhil",
+   "length": "1 year",
+   "url": "https://www.cst.cam.ac.uk/",
+   "verified": false,
+   "core": [
+    "Taught modules plus a research thesis"
+   ],
+   "options": [
+    "Bayesian Inference",
+    "Probabilistic Machine Learning",
+    "Natural Language Processing",
+    "3-D Computer Vision & Robotics",
+    "Gaussian processes and uncertainty quantification"
+   ],
+   "covers": [
+    "ml",
+    "math",
+    "cv"
+   ],
+   "note": "Small cohort, heavily theoretical, with an emphasis on Bayesian methods and uncertainty quantification. Module names here are from secondary sources, so check the Computer Laboratory's own pages before relying on the overlap."
+  },
+  {
+   "inst": "University of Manchester",
+   "short": "Manchester",
+   "country": "United Kingdom",
+   "city": "Manchester",
+   "prog": "MSc Artificial Intelligence",
+   "level": "MSc",
+   "length": "1 year",
+   "url": "https://www.scieng.manchester.ac.uk/pgt/department-of-computer-science/msc-artificial-intelligence",
+   "verified": true,
+   "core": [
+    "Fundamentals of Machine Learning",
+    "Symbolic AI",
+    "AI Applications"
+   ],
+   "options": [
+    "Fourth theme chosen from data engineering, software engineering or cyber security",
+    "Text Mining",
+    "Data Engineering"
+   ],
+   "covers": [
+    "ml",
+    "de"
+   ],
+   "note": "Organised as four themes of two course units each, three of them mandatory. Unusual in still teaching symbolic AI properly alongside machine learning. Manchester lists partnerships with IBM, AWS and NVIDIA, so the vendor credentials on this page connect directly."
+  },
+  {
+   "inst": "University of Manchester",
+   "short": "Manchester",
+   "country": "United Kingdom",
+   "city": "Manchester",
+   "prog": "MSc Machine Learning",
+   "level": "MSc",
+   "length": "1 year",
+   "url": "https://www.manchester.ac.uk/study/masters/courses/list/21576/msc-machine-learning/",
+   "verified": true,
+   "core": [
+    "Fundamentals of Machine Learning",
+    "AI and its Applications",
+    "Decision Making Under Uncertainty"
+   ],
+   "options": [
+    "Deep neural network architectures",
+    "Language learning models",
+    "Cognitive humanoid robots",
+    "Probabilistic Graphical Models",
+    "Deep Reinforcement Learning",
+    "Scalable Data Mining with Spark"
+   ],
+   "covers": [
+    "ml",
+    "rl",
+    "math"
+   ],
+   "note": "The machine learning sibling of Manchester's AI MSc, adding decision making under uncertainty. Covers deep RL, which most UK master's leave out."
+  },
+  {
+   "inst": "London School of Economics",
+   "short": "LSE",
+   "country": "United Kingdom",
+   "city": "London",
+   "prog": "MSc Data Science",
+   "level": "MSc",
+   "length": "1 year",
+   "url": "https://www.lse.ac.uk/study-at-lse/graduate/msc-data-science",
+   "verified": true,
+   "core": [
+    "Managing and Visualising Data",
+    "Data Analysis and Statistical Methods",
+    "Machine Learning and Data Mining"
+   ],
+   "options": [
+    "Artificial Intelligence",
+    "Deep Learning",
+    "Reinforcement Learning",
+    "Bayesian Machine Learning",
+    "Distributed Computing for Big Data",
+    "Graph Data Analytics and Representation Learning",
+    "Time Series Analysis",
+    "Financial Statistics"
+   ],
+   "covers": [
+    "ml",
+    "math",
+    "ts",
+    "de",
+    "rl"
+   ],
+   "note": "Statistics-led rather than engineering-led, and it wants a solid quantitative background going in. The only programme in this list with a named time series module, which is why that topic is marked covered. Note: you asked about LSEG, which is the London Stock Exchange Group and not a university; this is LSE."
+  },
+  {
+   "inst": "University of East London",
+   "short": "UEL",
+   "country": "United Kingdom",
+   "city": "London",
+   "prog": "MSc Artificial Intelligence and Data Science",
+   "level": "MSc",
+   "length": "1 year",
+   "url": "https://www.uel.ac.uk/",
+   "verified": true,
+   "core": [
+    "Fundamentals of Artificial Intelligence (CN7041)",
+    "Software Engineering (CN7039)",
+    "Artificial Intelligence & Machine Vision",
+    "Machine Learning on Big Data",
+    "Professional Life Dissertation"
+   ],
+   "options": [],
+   "covers": [
+    "ml",
+    "cv",
+    "eth",
+    "py",
+    "de"
+   ],
+   "note": "Covers classical ML, machine vision, big data and the ethics strand. Leaves the whole LLM application layer untouched: no RAG, no agents, no evaluation, no MLOps. That gap is precisely what Phase 2 of this list exists to fill."
+  },
+  {
+   "inst": "Mohamed bin Zayed University of AI",
+   "short": "MBZUAI",
+   "country": "United Arab Emirates",
+   "city": "Abu Dhabi",
+   "prog": "MSc Artificial Intelligence (Machine Learning)",
+   "level": "MSc",
+   "length": "36 credits",
+   "url": "https://mbzuai.ac.ae/academics/msc-programs/masters-in-ai-machine-learning",
+   "verified": true,
+   "core": [
+    "ML701 Machine Learning",
+    "ML7201 Foundations of Machine Learning",
+    "ML7205 Advanced Machine Learning",
+    "MTH7101 Mathematical Foundations of AI",
+    "ML7101 Probabilistic and Statistical Inference",
+    "RES799 Research Methods",
+    "INT799 Internship",
+    "AI799 Research Thesis"
+   ],
+   "options": [
+    "Supervised ML",
+    "Reinforcement learning",
+    "Computer vision",
+    "AI systems",
+    "Trustworthy AI and attacks against ML systems"
+   ],
+   "covers": [
+    "ml",
+    "math",
+    "rl",
+    "cv",
+    "sec"
+   ],
+   "note": "The world's first university dedicated entirely to AI, created under the UAE's AI 2031 strategy. Structure is 8 core, 16 elective, 2 internship, 2 research methods and 8 thesis credits. Research-weighted with a built-in internship, and it teaches adversarial attacks on ML systems, which is rare at master's level."
+  },
+  {
+   "inst": "Mohamed bin Zayed University of AI",
+   "short": "MBZUAI",
+   "country": "United Arab Emirates",
+   "city": "Abu Dhabi",
+   "prog": "MSc Artificial Intelligence (Natural Language Processing)",
+   "level": "MSc",
+   "length": "36 credits",
+   "url": "https://mbzuai.ac.ae/academics/msc-programs/masters-in-ai-natural-language-processing",
+   "verified": true,
+   "core": [
+    "NLP701 Natural Language Processing",
+    "ML701 Machine Learning",
+    "MTH7101 Mathematical Foundations of AI",
+    "AI7102 Introduction to Deep Learning"
+   ],
+   "options": [
+    "Advanced NLP",
+    "Kernel methods and statistical learning theory",
+    "Reinforcement learning"
+   ],
+   "covers": [
+    "ml",
+    "math",
+    "llm"
+   ],
+   "note": "The closest thing in this list to a degree that genuinely covers the LLM layer, since NLP here goes to research depth. If you are on this programme, the beginner LLM rows on this page are redundant; the engineering and MLOps rows are not."
+  },
+  {
+   "inst": "Mohamed bin Zayed University of AI",
+   "short": "MBZUAI",
+   "country": "United Arab Emirates",
+   "city": "Abu Dhabi",
+   "prog": "MSc Computer Science",
+   "level": "MSc",
+   "length": "36 credits",
+   "url": "https://mbzuai.ac.ae/academics/msc-programs/masters-in-ai-computer-science",
+   "verified": true,
+   "core": [
+    "AI7101 Machine Learning with Python",
+    "AI7102 Introduction to Deep Learning",
+    "CS7101 Algorithms and Data Structures",
+    "ML7101 Probabilistic and Statistical Inference",
+    "MTH7101 Mathematical Foundations of AI"
+   ],
+   "options": [
+    "AI and computer systems",
+    "Data mining and data warehousing"
+   ],
+   "covers": [
+    "ml",
+    "math",
+    "py",
+    "sys"
+   ],
+   "note": "Assumes solid Python including NumPy, pandas, matplotlib and basic Git on entry, so it skips the beginner tooling entirely. Includes a seven-week maths foundations course, which is the single most commonly missing piece elsewhere."
+  },
+  {
+   "inst": "Mohamed bin Zayed University of AI",
+   "short": "MBZUAI",
+   "country": "United Arab Emirates",
+   "city": "Abu Dhabi",
+   "prog": "MSc Artificial Intelligence (Computer Vision)",
+   "level": "MSc",
+   "length": "36 credits",
+   "url": "https://mbzuai.ac.ae/academics/msc-programs/masters-in-ai-computer-vision",
+   "verified": true,
+   "core": [
+    "CV701 Human and Computer Vision",
+    "CV702 Advanced Computer Vision",
+    "ML701 Machine Learning",
+    "MTH7101 Mathematical Foundations of AI"
+   ],
+   "options": [
+    "Data mining",
+    "Trustworthy AI",
+    "Robotic vision and multi-sensor fusion"
+   ],
+   "covers": [
+    "ml",
+    "cv",
+    "math",
+    "sec"
+   ],
+   "note": "MBZUAI's computer vision department is ranked inside the global top 15 by its own account, with research in robotic vision, generative media and trustworthy AI."
+  },
+  {
+   "inst": "Tsinghua University",
+   "short": "Tsinghua",
+   "country": "China",
+   "city": "Beijing",
+   "prog": "Master's in Artificial Intelligence / Computer Science and Technology",
+   "level": "MSc",
+   "length": "2 to 3 years",
+   "url": "https://www.tsinghua.edu.cn/en/",
+   "verified": false,
+   "core": [
+    "Published module lists are not available in English at the level this list needs"
+   ],
+   "options": [],
+   "covers": [
+    "ml",
+    "math"
+   ],
+   "note": "Department of Computer Science and Technology offers master's and doctoral programmes covering AI, machine learning, systems architecture and human-computer interaction, with English-taught graduate programmes available. Tsinghua also has a dedicated College of AI. Overlap here is an informed estimate, not a verified module mapping: confirm against the department's own pages before relying on it."
+  },
+  {
+   "inst": "Peking University",
+   "short": "PKU",
+   "country": "China",
+   "city": "Beijing",
+   "prog": "Master's programmes in AI-related fields",
+   "level": "MSc",
+   "length": "2 to 3 years",
+   "url": "https://english.pku.edu.cn/",
+   "verified": false,
+   "core": [
+    "Module lists not verified in English"
+   ],
+   "options": [],
+   "covers": [
+    "ml",
+    "math"
+   ],
+   "note": "Specialised AI programmes with an emphasis on theoretical foundations alongside applications, and research strength in computer vision and deep learning. English-taught master's routes require TOEFL or IELTS plus GRE for non-native speakers. Overlap is an estimate."
+  },
+  {
+   "inst": "Institute of Science Tokyo",
+   "short": "Science Tokyo",
+   "country": "Japan",
+   "city": "Tokyo",
+   "prog": "Artificial Intelligence Graduate Major",
+   "level": "Master's",
+   "length": "2 years",
+   "url": "https://educ.titech.ac.jp/is/eng/education/ai_graduate/curriculum.html",
+   "verified": true,
+   "core": [
+    "Machine learning",
+    "Human-computer interaction",
+    "Natural language processing",
+    "Advanced knowledge-processing technology",
+    "Multimedia information processing"
+   ],
+   "options": [
+    "600-level English presentation courses",
+    "Internship courses",
+    "AI Forum courses"
+   ],
+   "covers": [
+    "ml",
+    "llm",
+    "aud"
+   ],
+   "note": "Formerly Tokyo Institute of Technology. A dedicated AI graduate major rather than an AI track inside computer science, with explicit English presentation and internship components built into the curriculum."
+  },
+  {
+   "inst": "University of Tokyo",
+   "short": "UTokyo",
+   "country": "Japan",
+   "city": "Tokyo",
+   "prog": "Master's programmes in AI and information science",
+   "level": "Master's",
+   "length": "2 years",
+   "url": "https://www.u-tokyo.ac.jp/en/",
+   "verified": false,
+   "core": [
+    "Module lists not verified"
+   ],
+   "options": [],
+   "covers": [
+    "ml"
+   ],
+   "note": "Japan's leading institution for AI and robotics research. Programme structure not verified at module level here, so the overlap is an estimate."
+  },
+  {
+   "inst": "KAIST",
+   "short": "KAIST",
+   "country": "South Korea",
+   "city": "Daejeon",
+   "prog": "MS in Artificial Intelligence / MS in Data Science and Statistics",
+   "level": "MS",
+   "length": "2 years",
+   "url": "https://www.kaist.ac.kr/en/",
+   "verified": false,
+   "core": [
+    "Module lists not verified"
+   ],
+   "options": [],
+   "covers": [
+    "ml",
+    "math"
+   ],
+   "note": "KAIST runs a dedicated AI graduate school and a separate data science and statistics route. English-taught options available. Overlap is an estimate until the module lists are checked."
+  },
+  {
+   "inst": "Seoul National University",
+   "short": "SNU",
+   "country": "South Korea",
+   "city": "Seoul",
+   "prog": "MS in Artificial Intelligence / MS in Data Science",
+   "level": "MS",
+   "length": "2 years",
+   "url": "https://en.snu.ac.kr/",
+   "verified": false,
+   "core": [
+    "Module lists not verified"
+   ],
+   "options": [],
+   "covers": [
+    "ml",
+    "math"
+   ],
+   "note": "Separate AI and data science master's routes through SNU's graduate school of data science. Overlap is an estimate."
+  },
+  {
+   "inst": "Penn State University",
+   "short": "Penn State",
+   "country": "United States",
+   "city": "Online / Great Valley",
+   "prog": "Master of Artificial Intelligence (MAI)",
+   "level": "Master's",
+   "length": "33 credits",
+   "url": "https://bulletins.psu.edu/graduate/programs/majors/artificial-intelligence",
+   "verified": true,
+   "core": [
+    "A-I 801 Foundation of Artificial Intelligence",
+    "A-I 804 Ethics of Artificial Intelligence",
+    "21 credits of required courses",
+    "3-credit capstone"
+   ],
+   "options": [
+    "9 credits of electives from an approved list"
+   ],
+   "covers": [
+    "ml",
+    "eth"
+   ],
+   "note": "Fully online through Penn State World Campus as well as in residence, which makes it one of the few US AI master's genuinely reachable from anywhere. Interdisciplinary and deployment-oriented rather than research-first."
+  }
+ ]
+}

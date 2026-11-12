@@ -2,7 +2,9 @@
 
 A hand-checked map of AI, machine learning and data science courses.
 
-**133 courses across 19 providers. 100 of them are free. Every exam code verified by hand.**
+**164 courses across 23 providers. 125 of them are free. 22 university programmes mapped.**
+
+Every exam code verified by hand.
 
 Most AI learning roadmaps still send people to exams that no longer exist. This one does not.
 
@@ -32,8 +34,24 @@ aggregators do not bother doing:
 ## Providers covered
 
 DataCamp, Google, Coursera, Hugging Face, DeepLearning.AI, LangChain Academy, Harvard, Oracle,
-LinkedIn Learning, AWS, Microsoft, NVIDIA, OpenAI, Anthropic, Rust, React, fast.ai, freeCodeCamp,
-and university open courseware (MIT, Stanford, Helsinki).
+LinkedIn Learning, AWS, Microsoft, NVIDIA, OpenAI, Anthropic, IBM, Rust, React, fast.ai, freeCodeCamp,
+OWASP, Khan Academy and 3Blue1Brown, open-source and community resources, and university open
+courseware (MIT, Stanford, Helsinki).
+
+## Topics
+
+Machine learning, LLMs and prompting, RAG and vector databases, AI agents, fine-tuning and evaluation,
+MLOps and certifications, computer vision, ethics and governance, Python and data, portfolio and tooling,
+systems and GPU, web and product, maths foundations, data engineering and SQL, AI security and
+red-teaming, reinforcement learning, quantum computing, speech and audio, time series and forecasting,
+career and interview.
+
+## Degree overlap
+
+22 AI and data science master's programmes across the UK, US, China, Japan, South Korea and the UAE.
+Pick yours and the course list marks what you are already being taught, so you only spend your own time
+on the gap. 16 of the 22 have module lists read off the institution's own pages; the rest are marked
+unverified and treated as estimates.
 
 ## Tracks
 
@@ -44,6 +62,7 @@ Product Builder, Complete Beginner.
 
 ```
 dist/index.html      the whole site, self-contained, no build step
+universities.json    degree programmes and their module lists
 dist/logo.svg        the mark
 dist/vercel.json     headers and clean URLs
 courses.json         the course database, the thing worth editing
@@ -70,8 +89,9 @@ npm i -g vercel && cd dist && vercel --prod
 
 ## Editing the course list
 
-`courses.json` is the database. Each entry carries cost, hours, level, topic, track, whether a
-certificate is awarded, and a written note on whether it is worth taking.
+`courses.json` is the course database. `universities.json` holds the degree programmes.
+Each course entry carries cost, hours, level, topic, track, whether a certificate is awarded, and a
+written note on whether it is worth taking.
 
 Rules for an entry:
 
@@ -82,8 +102,13 @@ Rules for an entry:
 
 ## No affiliate links
 
-100 of the 133 courses are free, which makes most of this list worth nothing in commission.
+125 of the 164 courses are free, which makes most of this list worth nothing in commission.
 That is the point: the ranking is not for sale.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md). Freshness is the whole point of this project, so every verification
+pass is dated there.
 
 ## Licence
 

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Backprop — verified AI, ML and data science courses</title>
-<meta name="description" content="A hand-checked map of AI, machine learning and data science courses from 19 providers. Every exam code, price and retirement date verified by hand. 100 of 133 courses are free.">
+<meta name="description" content="A hand-checked map of AI, machine learning and data science courses from 23 providers, plus 22 university programmes so you can filter out what your degree already covers. 125 of 164 courses are free.">
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -151,6 +151,23 @@
     border:1px solid var(--line);cursor:pointer;font:inherit;font-size:11px}
   button.mini:hover{color:var(--ink);border-color:#b9c6da}
   .empty{text-align:center;padding:56px 20px;color:var(--mute)}
+  .ucard b{font-size:14.2px}
+  .ucard .inst{display:block;font-size:11.6px;color:var(--blue);font-weight:700;margin-bottom:3px;
+    letter-spacing:.02em;text-transform:uppercase}
+  .ucard .unv{display:inline-block;font-size:10px;font-weight:700;padding:2px 6px;border-radius:4px;
+    background:#fdf0e0;color:#8a4b00;margin-top:7px}
+  .upan{margin-top:14px;border:1px solid var(--line);border-left:3px solid var(--blue);
+    border-radius:var(--r);padding:16px 18px;background:var(--soft)}
+  .upan h3{font-size:15.5px;margin-bottom:3px}
+  .upan .sm{font-size:12.6px;color:var(--mute);margin:0 0 10px}
+  .upan p.note{font-size:13.2px;margin:0 0 11px}
+  .upan .mods{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-bottom:11px}
+  .upan .mods h4{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);
+    margin:0 0 5px;font-weight:700}
+  .upan .mods ul{margin:0;padding-left:17px;font-size:12.6px;color:var(--body)}
+  .upan .mods li{margin-bottom:2px}
+  .covered{opacity:.55}
+  .t-cov{background:#e7e9fc;color:#33409b}
 
   /* ---------- progress rail ---------- */
   .rail{position:fixed;left:0;right:0;bottom:0;z-index:35;background:var(--deep);color:#fff;
@@ -182,7 +199,8 @@
     <span class="sp"></span>
     <a class="nlink hide" href="#tracks">Tracks</a>
     <a class="nlink hide" href="#retired">Retired exams</a>
-    <a class="nlink" href="#courses">All 133</a>
+    <a class="nlink hide" href="#degree">Your degree</a>
+    <a class="nlink" href="#courses">All 164</a>
   </div>
 </nav>
 
@@ -191,13 +209,15 @@
     <span class="kicker">Verified by hand &middot; 12 November 2026</span>
     <h1>Every AI course worth taking. <em>Checked this month.</em></h1>
     <p class="lede">Most AI learning roadmaps still send people to exams that no longer exist. This one does not.
-      133 courses across 19 providers, each with its real cost, its current exam code, and an honest note on
-      whether it is worth your time. 100 of them are free.</p>
+      164 courses across 23 providers, each with its real cost, its current exam code, and an honest note on
+      whether it is worth your time. 125 of them are free. Then tell it which degree you are on, and it removes
+      what you are already being taught.</p>
     <div class="stats">
-      <div><b>133</b><span>courses checked</span></div>
-      <div><b>100</b><span>completely free</span></div>
-      <div><b>58</b><span>award a certificate</span></div>
-      <div><b>19</b><span>providers</span></div>
+      <div><b>164</b><span>courses checked</span></div>
+      <div><b>125</b><span>completely free</span></div>
+      <div><b>72</b><span>award a certificate</span></div>
+      <div><b>23</b><span>providers</span></div>
+      <div><b>22</b><span>degrees mapped</span></div>
       <div><b>5</b><span>retired exams flagged</span></div>
     </div>
   </div>
@@ -228,10 +248,26 @@
   </div>
 </section>
 
+<section id="degree" style="padding-top:8px">
+  <div class="wrap">
+    <div class="shead">
+      <h2>Already on a degree? Cut what you are being taught.</h2>
+      <p>22 AI and data science programmes across six countries, with their module lists read off the
+        institution's own pages. Pick yours and the list marks what your degree already covers, so you spend
+        your own time on the gap instead of paying twice for the same material.</p>
+    </div>
+    <div class="frow" style="border:none;padding:0 0 12px">
+      <span class="lbl">Country</span><span id="ctrybtns" style="display:contents"></span>
+    </div>
+    <div class="tracks" id="unigrid"></div>
+    <div id="unipanel"></div>
+  </div>
+</section>
+
 <div class="fbar" id="courses">
   <div class="wrap row">
     <button class="btn pill" id="togg" aria-expanded="false">Filters</button>
-    <input class="search" id="q" type="search" placeholder="Search 133 courses" aria-label="Search courses">
+    <input class="search" id="q" type="search" placeholder="Search 164 courses" aria-label="Search courses">
     <span id="chips" style="display:flex;gap:6px"></span>
     <span class="sp" style="flex:1"></span>
     <button class="btn" id="copydone">Copy done</button>
@@ -245,6 +281,7 @@
         <button class="btn" data-c="cert">Has certificate</button>
         <button class="btn" data-c="core">Core only</button>
         <button class="btn" data-c="todo">Not done</button>
+        <button class="btn" data-c="gap">Only my degree gap</button>
       </div>
       <div class="frow"><span class="lbl">Level</span>
         <button class="btn on" data-l="all">Any</button>
@@ -269,6 +306,10 @@
       exam code. Where a provider's own marketing disagreed with its terms, the terms won.</p>
     <p><b>Nothing here is an affiliate link.</b> 100 of the 133 courses are free, which makes most of this list
       worth nothing in commission. That is rather the point: the ranking is not for sale.</p>
+    <p><b>University module lists</b> were read off each institution's own course pages where marked verified.
+      Where a programme is marked unverified, it exists and the subject coverage is an informed estimate rather
+      than a checked module mapping, usually because the module list is not published in English. Universities
+      revise modules every year.</p>
     <p><b>Prices change and courses retire.</b> Confirm before you pay. If you find something out of date,
       that is a bug worth reporting.</p>
     <p style="color:#94a3b8">Backprop is an independent project. Not affiliated with, endorsed by, or sponsored
@@ -288,7 +329,9 @@
 
 <script>
 const KEY="backprop.v1";
-let D=null, done={}, track="all", cost="all", level="all", topic="all", plat="all", q="";
+let D=null, U=null, done={}, track="all", cost="all", level="all", topic="all", plat="all", q="";
+let uni=null, country="all";
+try{ uni=localStorage.getItem("backprop.uni")||null; }catch(e){}
 try{ done=JSON.parse(localStorage.getItem(KEY))||{}; }catch(e){ done={}; }
 const save=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(done)); }catch(e){} };
 const FREE=["free","audit","beta","freecert"];
@@ -298,9 +341,10 @@ const toast=m=>{const t=document.getElementById("toast");t.textContent=m;t.class
 
 async function boot(){
   try{
-    const r=await fetch("./courses.json");
+    const [r,ru]=await Promise.all([fetch("./courses.json"),fetch("./universities.json")]);
     if(!r.ok) throw new Error("HTTP "+r.status);
     D=await r.json();
+    U=ru.ok ? await ru.json() : {programmes:[]};
   }catch(e){
     document.getElementById("list").innerHTML=
       '<div class="empty">Could not load the course list. Reload the page.</div>';
@@ -326,7 +370,49 @@ async function boot(){
     '<button class="btn on" data-p="all">Any</button>'+
     Object.entries(D.platforms).map(([k,v])=>`<button class="btn" data-p="${k}">${esc(v.name)}</button>`).join("");
 
+  renderUni();
   render();
+}
+
+function covers(){
+  if(!uni||!U) return [];
+  const p=U.programmes[uni]; return p?p.covers:[];
+}
+
+function renderUni(){
+  if(!U||!U.programmes.length) return;
+  const countries=[...new Set(U.programmes.map(p=>p.country))].sort();
+  document.getElementById("ctrybtns").innerHTML=
+    '<button class="btn'+(country==="all"?" on":"")+'" data-ct="all">All</button>'+
+    countries.map(c=>`<button class="btn${country===c?" on":""}" data-ct="${esc(c)}">${esc(c)}</button>`).join("");
+
+  const idx=U.programmes.map((p,i)=>[p,i]).filter(([p])=>country==="all"||p.country===country);
+  document.getElementById("unigrid").innerHTML=idx.map(([p,i])=>
+    `<button class="tcard ucard${String(i)===String(uni)?" on":""}" data-uni="${i}">
+       <span class="inst">${esc(p.short)} &middot; ${esc(p.country)}</span>
+       <b>${esc(p.prog)}</b>
+       <p>${esc(p.level)} &middot; ${esc(p.length)} &middot; ${esc(p.city)}</p>
+       ${p.verified?"":'<span class="unv">modules not verified</span>'}</button>`).join("");
+
+  const pan=document.getElementById("unipanel");
+  if(uni===null||!U.programmes[uni]){ pan.innerHTML=""; return; }
+  const p=U.programmes[uni];
+  const cov=p.covers.map(k=>D.topics[k]).filter(Boolean);
+  const n=D.courses.filter(c=>p.covers.includes(c.topic)).length;
+  pan.innerHTML=`<div class="upan">
+    <h3>${esc(p.prog)}</h3>
+    <p class="sm">${esc(p.inst)} &middot; ${esc(p.city)}, ${esc(p.country)} &middot; ${esc(p.level)}, ${esc(p.length)}
+      &middot; <a href="${esc(p.url)}">course page</a></p>
+    <p class="note">${esc(p.note)}</p>
+    <div class="mods">
+      <div><h4>Core modules</h4><ul>${p.core.map(m=>`<li>${esc(m)}</li>`).join("")}</ul></div>
+      ${p.options.length?`<div><h4>Typical options</h4><ul>${p.options.map(m=>`<li>${esc(m)}</li>`).join("")}</ul></div>`:""}
+    </div>
+    <p class="note" style="margin:0"><b>Marked as covered:</b> ${cov.map(esc).join(", ")||"nothing"}.
+      That is ${n} of ${D.courses.length} courses dimmed below. Use the
+      <b>Only my degree gap</b> filter to see just what is left.
+      ${p.verified?"":"<br><b>Note:</b> this programme's module list is not verified, so treat the overlap as an estimate."}</p>
+  </div>`;
 }
 
 function visible(){
@@ -339,6 +425,7 @@ function visible(){
     if(cost==="cert" && !c.cert) return false;
     if(cost==="core" && !c.core) return false;
     if(cost==="todo" && done[c.id]) return false;
+    if(cost==="gap" && covers().includes(c.topic)) return false;
     if(q){
       const h=(c.name+" "+c.why+" "+D.platforms[c.platform].name+" "+D.topics[c.topic]).toLowerCase();
       if(!h.includes(q)) return false;
@@ -376,7 +463,8 @@ function render(){
 
   const ch=[];
   if(track!=="all") ch.push(["tr",D.tracks[track].name]);
-  if(cost!=="all")  ch.push(["c",{free:"Free only",cert:"Has certificate",core:"Core only",todo:"Not done"}[cost]]);
+  if(cost!=="all")  ch.push(["c",{free:"Free only",cert:"Has certificate",core:"Core only",todo:"Not done",gap:"My degree gap"}[cost]]);
+  if(uni!==null && U && U.programmes[uni]) ch.push(["u",U.programmes[uni].short+" "+U.programmes[uni].level]);
   if(level!=="all") ch.push(["l",level[0].toUpperCase()+level.slice(1)]);
   if(topic!=="all") ch.push(["t",D.topics[topic]]);
   if(plat!=="all")  ch.push(["p",D.platforms[plat].name]);
@@ -386,7 +474,8 @@ function render(){
 
 function card(c){
   const p=D.platforms[c.platform].name;
-  return `<div class="c ${done[c.id]?"done":""}">
+  const cov=covers().includes(c.topic);
+  return `<div class="c ${done[c.id]?"done":""} ${cov?"covered":""}">
     <input class="cb" type="checkbox" data-id="${c.id}" ${done[c.id]?"checked":""}
       aria-label="Mark ${esc(c.name)} complete">
     <div class="cbody">
@@ -398,6 +487,7 @@ function card(c){
         <span class="t t-lvl">${esc(c.level)}</span>
         ${costTag(c.cost)}
         ${c.cert?'<span class="t t-cert">CERTIFICATE</span>':""}
+        ${cov?'<span class="t t-cov">YOUR DEGREE COVERS THIS</span>':""}
         <span class="hrs">${esc(c.hours)}</span>
       </div>
       <div class="url"><code>${esc(c.url.replace(/^https?:\/\//,""))}</code>
@@ -428,6 +518,14 @@ document.addEventListener("click",async e=>{
       catch(err){ toast("Copy the address shown under the course"); } }
     return; }
 
+  const ct=e.target.closest("[data-ct]");
+  if(ct){ country=ct.dataset.ct; renderUni(); return; }
+
+  const un=e.target.closest("[data-uni]");
+  if(un){ const k=un.dataset.uni; uni = String(uni)===String(k) ? null : k;
+    try{ uni===null?localStorage.removeItem("backprop.uni"):localStorage.setItem("backprop.uni",uni); }catch(err){}
+    renderUni(); render(); return; }
+
   const tr=e.target.closest("[data-tr]");
   if(tr){ const k=tr.dataset.tr; track = track===k ? "all" : k;
     document.querySelectorAll("[data-tr]").forEach(x=>x.classList.toggle("on",x.dataset.tr===track));
@@ -441,6 +539,7 @@ document.addEventListener("click",async e=>{
   const x=e.target.closest("[data-x]");
   if(x){ const k=x.dataset.x;
     if(k==="tr"){ track="all"; document.querySelectorAll("[data-tr]").forEach(b=>b.classList.remove("on")); }
+    if(k==="u"){ uni=null; try{ localStorage.removeItem("backprop.uni"); }catch(err){} renderUni(); }
     if(k==="c")  setGroup("[data-c]","c","all",v=>cost=v);
     if(k==="l")  setGroup("[data-l]","l","all",v=>level=v);
     if(k==="t")  setGroup("[data-t]","t","all",v=>topic=v);
@@ -459,6 +558,7 @@ let qt; document.getElementById("q").addEventListener("input",e=>{
 
 document.getElementById("clear").onclick=()=>{
   track=cost=level=topic=plat="all"; q=""; document.getElementById("q").value="";
+  uni=null; country="all"; try{ localStorage.removeItem("backprop.uni"); }catch(e){} renderUni();
   document.querySelectorAll("[data-tr]").forEach(b=>b.classList.remove("on"));
   [["[data-c]","c"],["[data-l]","l"],["[data-t]","t"],["[data-p]","p"]].forEach(([s,a])=>
     document.querySelectorAll(s).forEach(b=>b.classList.toggle("on",b.dataset[a]==="all")));
