@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-14",
  "platforms": {
   "dc": {
    "name": "DataCamp",
@@ -2532,7 +2532,7 @@
    "hours": "~1 week",
    "core": true,
    "cert": false,
-   "url": "http://introtodeeplearning.com/",
+   "url": "https://introtodeeplearning.com/",
    "why": "Free. MIT's intensive deep learning bootcamp, refreshed every year with current material and released publicly with labs. One of the few free courses that keeps pace with the field.",
    "phase": 0,
    "level": "intermediate",

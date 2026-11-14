@@ -71,6 +71,16 @@ index.html           the page template (fetches courses.json in dev)
 DEPLOY.md            deployment steps
 ```
 
+## Maintaining it
+
+See [MAINTENANCE.md](MAINTENANCE.md). The short version: nothing enters the data that was not read off
+the provider's own pages, and `python3 verify.py` must pass before anything is committed.
+
+```bash
+python3 verify.py      # integrity check
+python3 build_site.py  # rebuild dist/index.html
+```
+
 ## Run it locally
 
 ```bash

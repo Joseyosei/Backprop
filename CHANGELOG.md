@@ -2,6 +2,22 @@
 
 Freshness is the product. Every verification pass gets an entry here with the date it was checked.
 
+## 2026-11-14
+
+**Added a maintenance procedure and an automated integrity check.** `MAINTENANCE.md` sets out the one
+rule (nothing enters the data that was not read off the provider's own pages), the authoritative source
+per provider, and the order of each verification pass. `verify.py` checks every course for a resolvable
+platform, topic and cost key, an https URL, a usable note, and no duplicate ids, then cross-checks the
+counts in the README and the page against the data so the totals cannot silently go stale.
+
+**One bug found by the checker on its first run:** the MIT 6.S191 entry used an http URL. Fixed.
+
+**Added `build_site.py`** so rebuilding `dist/index.html` is one command rather than a hand-assembled step.
+
+Nothing else moved. Prices, exam codes and free tiers re-checked against the 12 November pass and
+unchanged: no new retirements, Oracle's Foundations certifications still free including the exam, the
+DeepLearning.AI beta window still open.
+
 ## 2026-11-12
 
 **Added IBM.** SkillsBuild free courses and Credly-backed badges, Cognitive Class, and the professional
