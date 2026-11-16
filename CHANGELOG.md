@@ -2,6 +2,36 @@
 
 Freshness is the product. Every verification pass gets an entry here with the date it was checked.
 
+## 2026-11-16
+
+**This pass verified almost nothing, and the data was left alone.** The scheduled run could not read
+provider pages. The first web fetches raised a permission prompt, there was nobody at the desk to answer
+it, and once it timed out the fetch layer stopped sending requests for the rest of the session. Search
+still worked, but it returns titles and links only, and a title is not a price. So nothing was written to
+`courses.json` or `universities.json`. That is the only correct outcome here: every exam code, price and
+free-tier claim in the data is still carrying its 14 November check, not a 16 November one. The "Verified
+by hand" date on the page was left at 14 November deliberately, because moving it would assert a check
+that did not happen.
+
+**One page was read before the block, and it raises a question for the next pass.** The AI-901 exam page
+on learn.microsoft.com gives the title as "Exam AI-901: Microsoft Azure AI Fundamentals (beta)" and its
+retirement date field as none. Two things follow. The exam is live, so that entry is not sending anyone at
+a dead exam. But it is still flagged beta, and the page prints no dollar figure at all, only that the
+price depends on the country or region where the exam is proctored. The "around USD 99" in the AI-901
+entry has no first-party source standing behind it as of today. It was left in place rather than changed,
+per the rule about leaving previous values, and it needs confirming or cutting next pass.
+
+**Everything else is unchecked.** Outstanding, in priority order: AWS AIF-C01 and MLA-C02 codes and
+prices; Microsoft AI-103 and AI-300 codes, prices and retirement fields; NVIDIA NCA-GENL and NCA-GENM at
+$125; Oracle's free Foundations certifications including 1Z0-1122-26 and 1Z0-1157-26, which is the single
+most likely thing in this data to have quietly moved behind a paywall; the DeepLearning.AI beta free
+window; the IBM SkillsBuild and Microsoft Learn free tiers; genuinely new first-party courses; and the 79
+distinct URLs for dead links.
+
+`python3 verify.py` passes. 164 courses, 125 free, 23 providers, 20 topics, 22 degrees, all unchanged.
+Rebuilding `dist/index.html` produced a byte-identical file, which at least confirms the build is still
+reproducible from the committed data.
+
 ## 2026-11-14
 
 **Added a maintenance procedure and an automated integrity check.** `MAINTENANCE.md` sets out the one
