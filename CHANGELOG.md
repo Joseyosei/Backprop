@@ -2,6 +2,112 @@
 
 Freshness is the product. Every verification pass gets an entry here with the date it was checked.
 
+## 2026-11-23
+
+**The fetch block that wasted the 16 November pass is solved, and the fix is worth writing down.**
+Reading a URL straight out of `courses.json` is refused with a provenance error, which is what stopped
+the last run dead. Pages become readable once the same session has seen them in a search result first.
+So the working order is search for the provider's page, then read the URL the search returned. Every
+figure below was read off a provider page in this session on that basis. Four URLs still refused and are
+recorded as unverified rather than guessed.
+
+**No exam retired since the last pass, so the retired ledger is unchanged.** All five entries in it still
+stand. Every certification exam code in the data was re-read: AI-901, AI-103, AI-300, AIF-C01, MLA-C02,
+NCA-GENL, NCA-GENM and the Oracle Foundations pair. None is dead. That is the project's headline claim and
+it holds.
+
+**Three invented-looking prices are gone.** This is the real change in this pass. AI-901 carried "around
+USD 99" and AI-103 and AI-300 carried "around USD 165", and no Microsoft page prints any of them.
+Microsoft's exam and certification pages say only that the price depends on the country or region where
+the exam is proctored. The 16 November note flagged the AI-901 figure for confirming or cutting, and it is
+cut. The AI-901 entry also lost the claim that Virtual Training Day vouchers "routinely cover it", which
+no first-party page supports either. In exchange the entries now tell the reader the true and more useful
+thing, which is that there is no single dollar price to look up.
+
+**AI-901 has come out of beta.** On 16 November its page title read "(beta)". Today the word is gone, the
+retirement date field reads none, the passing score is 700 and the English version carries an update date
+of 15 April 2026. AI-103 and AI-300 both show no retirement date and no beta flag. The certification names
+in the data were right, incidentally: the exams are titled Developing AI Apps and Agents on Azure and
+Operationalizing Machine Learning and Generative AI Solutions, but the credentials they earn really are
+Azure AI Apps and Agents Developer Associate and Machine Learning Operations Engineer Associate.
+
+**MLA-C02 is still the beta, not the real exam, and the entry now says so.** The AWS page dated 17
+November lists MLA-C02 as "Updated - Beta" at $75 with general availability dates marked TBD, and lists
+the outgoing MLA-C01 as current at $150. Since MLA-C01's last English sitting was 28 September, MLA-C02 is
+the only live English route while sitting in beta, which is a thing worth knowing before booking. One
+oddity: the exam code row on that page prints "ME1-C02" while the body text says MLA-C02. The exam guides
+index and the guide's own title both say MLA-C02, so that is what the data keeps and the AWS page looks
+like it has a typo.
+
+**AIF-C01 confirmed live and unchanged**, against the official exam guide at revision 1.2 of 29 October
+2026: 50 scored questions plus 15 unscored, passing score 700, no successor and no beta in flight.
+
+**Oracle is still free, but this data was overclaiming it.** Oracle University's own pages confirm the
+important half: "Every Foundations-level course and certification stays free", and the free part covers
+the lessons, the skill checks, the practice exams and the certification attempt itself, with as many
+attempts as needed. The exams are not dead and not paywalled, which was the single biggest risk in this
+file. What could not be confirmed is the word "proctored", which three Oracle entries used and one built a
+selling line on. No Oracle page says it, and Oracle's own exam URLs for these read `exam-unproctored`. The
+word is removed and the entries now say plainly not to describe these as proctored credentials. 1Z0-1157-26
+is confirmed by Oracle's own announcement at 40 questions in 60 minutes with a 65 per cent pass mark and a
+free exam. 1Z0-1122-26 could not be confirmed from a page body, only from an Oracle URL, so it stays as the
+previous value.
+
+**Two Oracle changes that do not touch this data but are worth logging.** Professional-level courses have
+moved to paid access, and the OCI Architect Associate course and certification are now free. Neither has an
+entry here. Oracle also confirms its certifications are valid 24 months, which is what the data already said.
+
+**The DeepLearning.AI free window is open, with a catch that is new.** Three course pages all still read
+"Course access is free for a limited time during the DeepLearning.AI learning platform beta!" with no end
+date and no paywall, so the `beta` cost label survives. But graded assignments and certificates now sit
+behind the paid PRO plan. The Agentic AI entry sold itself partly on its three graded programming
+assignments, so that entry now carries the caveat. The free part is the videos.
+
+**IBM is free, and one sentence of ours was putting words in IBM's mouth.** The site says "100% free
+learning" and credentials are claimed through Credly, both confirmed. But the entry claimed IBM "states
+itself" that SkillsBuild is not an internship, scholarship or job offer, and that statement is not on the
+home page, the digital credentials page or the badge page. The caveat is good advice so it stays, now
+labelled as our warning rather than an IBM quote.
+
+**NVIDIA needed no change at all.** NCA-GENL and NCA-GENM both confirmed at $125, 50 to 60 questions, one
+hour, remotely proctored, badge valid two years, no retirement notice. The data said exactly that.
+
+**Added two genuinely new first-party AWS AI certifications**, both read off their official exam guides.
+AWS Certified Generative AI Developer Professional (AIP-C01) is the useful one: 65 scored questions,
+passing score 750, weighted towards foundation model integration at 31 per cent, with model training
+explicitly out of scope. AWS Certified AI Business Strategist (AIB-C01) is listed for completeness with an
+honest note to skip it, because AWS pitches it at people who champion AI rather than build it and states
+that no coding is required.
+
+**Held back on purpose: NVIDIA's NCP-GENL and NCP-AAI professional exams.** Both listed at $200 on
+NVIDIA's certification page, and both would fit this map well. But their own pages print "(Coming soon)"
+under the title while also showing a register link, and the detail came back from a summary of a truncated
+page rather than verbatim text. That is not good enough to publish a price against, so nothing was added.
+First thing to settle next pass.
+
+**Dead links: partial sweep, nothing dead found.** Confirmed live and on topic this session:
+skills.google/paths/183, academy.langchain.com/courses/intro-to-langgraph, the NVIDIA certification page,
+skillsbuild.org, the Microsoft credentials and study guide pages, the AWS docs and certification pages,
+three DeepLearning.AI course pages and the Oracle University blog. Four refused on provenance and are
+unverified rather than dead: education.oracle.com, cognitiveclass.ai, gandalf.lakera.ai and otexts.com/fpp3.
+The full 79-URL sweep was not done, because every URL needs a search before it can be read and that does
+not scale to 79 in one pass.
+
+**One pre-existing bug fixed.** The page footer still read "100 of the 133 courses are free", left over
+from a build two versions ago. `verify.py` never caught it because it only checks that the right numbers
+appear somewhere, not that wrong ones are absent. Now 125 of 166.
+
+`python3 verify.py` passes. 166 courses, 125 free, 23 providers, 20 topics, 22 degrees. The hero date moves
+to 23 November and the footer now states separately that the certification entries specifically were
+re-read today, rather than implying the whole file was. `universities.json` was not touched and still
+carries its 14 November date, because no university page was checked this pass.
+
+**Outstanding for next pass**, in priority order: NVIDIA NCP-GENL and NCP-AAI once their pages settle;
+1Z0-1122-26 confirmed from a page body rather than a URL; the Microsoft Learn and Applied Skills free-tier
+claim in `p5ms0`, which was not checked today; the four provenance-blocked URLs; the remaining URLs in the
+79; and the new DeepLearning.AI course "Tabular Foundation Models for Data Science Agents", seen on a site
+banner but not read.
+
 ## 2026-11-16
 
 **This pass verified almost nothing, and the data was left alone.** The scheduled run could not read

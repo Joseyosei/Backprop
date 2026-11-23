@@ -2,7 +2,7 @@
 
 A hand-checked map of AI, machine learning and data science courses.
 
-**164 courses across 23 providers. 125 of them are free. 22 university programmes mapped.**
+**166 courses across 23 providers. 125 of them are free. 22 university programmes mapped.**
 
 Every exam code verified by hand.
 
@@ -112,7 +112,7 @@ Rules for an entry:
 
 ## No affiliate links
 
-125 of the 164 courses are free, which makes most of this list worth nothing in commission.
+125 of the 166 courses are free, which makes most of this list worth nothing in commission.
 That is the point: the ranking is not for sale.
 
 ## Changelog

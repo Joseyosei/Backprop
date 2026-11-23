@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14",
+ "updated": "2026-11-23",
  "platforms": {
   "dc": {
    "name": "DataCamp",
@@ -332,7 +332,7 @@
    "core": true,
    "cert": true,
    "url": "https://www.deeplearning.ai/courses/",
-   "why": "Five modules, three of them ending in a graded programming assignment: reflection, tool use and the Model Context Protocol, evaluation and error analysis, planning and multi-agent workflows. Vendor-neutral, so the patterns outlive whichever framework wins.",
+   "why": "Five modules, three of them ending in a graded programming assignment: reflection, tool use and the Model Context Protocol, evaluation and error analysis, planning and multi-agent workflows. Vendor-neutral, so the patterns outlive whichever framework wins. Watch the catch, because it is new: course access is still free under the platform beta, but the graded assignments and the certificate now sit behind the paid PRO plan, and the graded work is the part worth having.",
    "phase": 2,
    "level": "intermediate",
    "tracks": [
@@ -1334,7 +1334,7 @@
    "core": true,
    "cert": true,
    "url": "https://education.oracle.com/",
-   "why": "Start the credential phase here. Oracle's 2026 structure keeps every Foundations-level course and certification free, and that includes the proctored exam, the lessons, the skill checks and the practice tests. A real, proctored, resume-grade AI certification for nothing, valid 24 months. AI, ML, deep learning and generative AI with OCI examples, no coding required.",
+   "why": "Start the credential phase here. Oracle University's own pages still say every Foundations-level course and certification stays free, and that free covers the lessons, the skill checks, the practice exams and the certification attempt itself, with as many attempts as you need. One correction to what this entry used to claim: Oracle does not state anywhere we could find that the Foundations exam is proctored, and its own exam URLs read unproctored, so do not sell it as a proctored credential. Still a real free certification, valid 24 months. AI, ML, deep learning and generative AI with OCI examples, no coding required.",
    "phase": 5,
    "level": "intermediate",
    "tracks": [
@@ -1352,7 +1352,7 @@
    "core": true,
    "cert": true,
    "url": "https://education.oracle.com/",
-   "why": "The other genuinely free proctored AI certification: how AI agents work and how agent-based applications are built. Take it straight after the one above. Two free proctored certifications beats one paid foundational AWS exam on both cost and signal.",
+   "why": "The other genuinely free AI certification: how AI agents work and how agent-based applications are built. Oracle's own announcement puts it at 40 questions in 60 minutes with a 65 per cent pass mark and says the exam is free, with no end date given. Take it straight after the one above. Two free AI certifications beats one paid foundational AWS exam on cost, though see the note above before describing either as proctored.",
    "phase": 5,
    "level": "intermediate",
    "tracks": [
@@ -1370,7 +1370,7 @@
    "core": false,
    "cert": true,
    "url": "https://education.oracle.com/",
-   "why": "Free, exam included. Cloud fundamentals. Only worth it if you want a second cloud alongside AWS on the CV.",
+   "why": "Free, exam attempt included, under the same Foundations policy Oracle restated in August 2026. Cloud fundamentals. Only worth it if you want a second cloud alongside AWS on the CV.",
    "phase": 5,
    "level": "intermediate",
    "tracks": [
@@ -1460,7 +1460,7 @@
    "core": true,
    "cert": true,
    "url": "https://aws.amazon.com/certification/",
-   "why": "The AWS credential actually worth having for an AI Engineer CV, and a better use of an exam fee than Cloud Practitioner. Foundation models, prompt engineering, RAG and vector databases, responsible AI.",
+   "why": "The AWS credential actually worth having for an AI Engineer CV, and a better use of an exam fee than Cloud Practitioner. Foundation models, prompt engineering, RAG and vector databases, responsible AI. Confirmed live on 23 November 2026 against the official exam guide, revision 1.2 of 29 October 2026: 50 scored questions plus 15 unscored, passing score 700, no successor exam and no beta in flight. AWS prints no price on the guide itself.",
    "phase": 5,
    "level": "intermediate",
    "tracks": [
@@ -1478,7 +1478,7 @@
    "core": true,
    "cert": true,
    "url": "https://aws.amazon.com/certification/",
-   "why": "Taking machine learning from research into production. The strongest AWS AI credential below Professional level, and the natural follow-on to AI Practitioner. Note the exam code: MLA-C01 was retired in English on 28 September 2026, and the Machine Learning Specialty retired entirely on 31 March 2026.",
+   "why": "Taking machine learning from research into production. The strongest AWS AI credential below Professional level and the natural follow-on to AI Practitioner, but check the status before you book. As of the AWS page dated 17 November 2026, MLA-C02 is still listed as the updated beta at $75 with general availability dates marked TBD, while the outgoing MLA-C01 is listed as current at $150. MLA-C01's last English sitting was 28 September 2026 and the Machine Learning Specialty retired entirely on 31 March 2026, so MLA-C02 is the only live route even while it sits in beta.",
    "phase": 5,
    "level": "intermediate",
    "tracks": [
@@ -1503,6 +1503,41 @@
     "ops",
     "mle"
    ]
+  },
+  {
+   "id": "p5aws7",
+   "name": "AWS Certified AI Business Strategist (AIB-C01)",
+   "platform": "aws",
+   "topic": "ops",
+   "cost": "fee",
+   "hours": "130 min exam",
+   "core": false,
+   "cert": true,
+   "url": "https://aws.amazon.com/certification/",
+   "why": "Listed for completeness because it is new and people will ask about it, but most readers of this page should skip it. AWS pitches it at product and programme managers, consultants, sales and business analysts who champion AI without building it, and states that no coding or hands-on AWS experience is required. 130 minutes, passing score 700, weighted across AI literacy, strategy and business value, governance, and transformation at roughly a quarter each. Worth an exam fee only if your job is deciding on AI rather than shipping it. No price on the exam guide.",
+   "level": "beginner",
+   "tracks": [
+    "prod"
+   ],
+   "phase": 5
+  },
+  {
+   "id": "p5aws6",
+   "name": "AWS Certified Generative AI Developer, Professional (AIP-C01)",
+   "platform": "aws",
+   "topic": "ops",
+   "cost": "fee",
+   "hours": "exam",
+   "core": false,
+   "cert": true,
+   "url": "https://aws.amazon.com/certification/",
+   "why": "New since the last pass and the most relevant AWS exam above Associate level for anyone already building on Bedrock. AWS's own guide asks for two or more years shipping production applications plus a year of hands-on generative AI work, and weights the paper towards foundation model integration and data handling at 31 per cent and implementation at 26 per cent, with safety and governance at 20. 65 scored questions plus 10 unscored, passing score 750, which is higher than the 700 used lower down the ladder. Model training and advanced ML are explicitly out of scope, so this tests integration rather than research. No price on the exam guide.",
+   "level": "advanced",
+   "tracks": [
+    "aie",
+    "ops"
+   ],
+   "phase": 5
   },
   {
    "id": "p5ms0",
@@ -1532,7 +1567,7 @@
    "core": false,
    "cert": true,
    "url": "https://learn.microsoft.com/credentials/",
-   "why": "Around USD 99, and Microsoft Virtual Training Day vouchers routinely cover it. This is the current exam: AI-900 retired on 30 June 2026 and AI-901 now earns the Azure AI Fundamentals certification. Skip straight past it if you are going for AI-103.",
+   "why": "Microsoft publishes no dollar price for this. Its own exam page says only that the price depends on the country or region where the exam is proctored, so check yours before you budget for it. Re-read on 23 November 2026: live, retirement date none, passing score 700, and it has come out of beta since the last pass. This is the current exam, AI-900 retired on 30 June 2026. Skip straight past it if you are going for AI-103.",
    "phase": 5,
    "level": "beginner",
    "tracks": [
@@ -1551,7 +1586,7 @@
    "core": true,
    "cert": true,
    "url": "https://learn.microsoft.com/credentials/",
-   "why": "Around USD 165. The current Microsoft associate certification for AI engineers building generative AI apps and agents, replacing the retired AI-102. Role-based certifications are valid one year and renew free through a short online assessment. Free practice assessments are on AI Skills Navigator.",
+   "why": "No dollar price on Microsoft's own pages, which say only that the price depends on the country or region where the exam is proctored. The exam itself is titled Developing AI Apps and Agents on Azure and runs 120 minutes. The current Microsoft associate certification for AI engineers building generative AI apps and agents, replacing the retired AI-102. Role-based certifications expire annually and renew free through an online assessment on Microsoft Learn, which is the part people forget to factor in.",
    "phase": 5,
    "level": "intermediate",
    "tracks": [
@@ -1569,7 +1604,7 @@
    "core": false,
    "cert": true,
    "url": "https://learn.microsoft.com/credentials/",
-   "why": "Around USD 165. The MLOps credential that replaced the retired DP-100 Azure Data Scientist Associate. Take it only if you end up on the Azure side rather than AWS; do not collect both.",
+   "why": "No dollar price on Microsoft's own pages, which say only that the price depends on the country or region where the exam is proctored. The exam is titled Operationalizing Machine Learning and Generative AI Solutions. The MLOps credential that replaced the retired DP-100 Azure Data Scientist Associate. Expires annually and renews free through an online assessment. Take it only if you end up on the Azure side rather than AWS, and do not collect both.",
    "phase": 5,
    "level": "intermediate",
    "tracks": [
@@ -2683,7 +2718,7 @@
    "core": false,
    "cert": true,
    "url": "https://skillsbuild.org/",
-   "why": "100% free learning across AI, cybersecurity, data and cloud, with verifiable digital credentials. One honest caveat IBM states itself: it is a training platform, not an internship, scholarship or job offer. Do not describe a badge on your CV as a degree or a separate IBM certification.",
+   "why": "IBM's own site says 100 per cent free learning across AI, cybersecurity, data and cloud, with credentials claimed through Credly. Keep one distinction straight, as our own warning rather than a quote from IBM: a SkillsBuild badge is training, not an internship, a scholarship, a job offer or a degree, and it is not a separate IBM certification on a CV.",
    "level": "beginner",
    "tracks": [
     "aie",
